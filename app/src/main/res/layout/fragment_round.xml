@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragmentTwo"
+            type="in.forpay.fragment.flightbookingfragment.RoundFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll1_oneWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtDeparture"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDepartureDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Departure Date"
+                    android:textColorHint="#8A8A8A"
+                    android:textColor="#8A8A8A"
+                    android:textSize="13sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtReturn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtReturnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Return Date"
+                    android:textColorHint="#8A8A8A"
+                    android:textColor="#8A8A8A"
+                    android:textSize="13sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2_oneWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ll1_oneWay">
+
+            <LinearLayout
+                android:id="@+id/ll_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLayoutTraveller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtNoofTravellers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:hint="Travellers"
+                        android:textColorHint="@color/dark_text"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_flightClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Class :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/radio_btn_bg_size"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tv_economy"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Economy"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/tv_premiunEconomy"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Premium"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/tv_business"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Business"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/ll2_oneWay">
+
+            <TextView
+                android:id="@+id/txtSearchFlight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/green_new_btn"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Search Flight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="SearchCityAdapter"
+            type="in.forpay.adapter.busbookingadapter.SearchCityAdapter" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/line"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/txtSearchCityItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/app_name"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginBottom="1dp"
+            android:paddingStart="@dimen/_40sdp"
+            android:paddingEnd="0dp"/>
+
+    </LinearLayout>
+
+
+</layout>
+

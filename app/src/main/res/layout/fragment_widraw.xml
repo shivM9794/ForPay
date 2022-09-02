@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout -->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/mainLay"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="@dimen/_10sdp"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".fragment.WithdrawFragment">-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/scanbtn"-->
+<!--        android:layout_alignParentTop="true">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="18dp"-->
+<!--            app:cardElevation="2dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/mainLinear"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/search_flight_bg"-->
+<!--                android:orientation="vertical">-->
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--    </ScrollView>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/scanbtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:visibility="gone" />-->
+
+<!--</RelativeLayout>-->
+
+<RelativeLayout
+
+    android:id="@+id/mainLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        android:background="@drawable/search_flight_bg"-->
+<!--        app:cardElevation="2dp">-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/mainLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_flight_bg"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F7F9FA">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                app:hintTextAppearance="@style/text_Label"
+                                app:hintTextColor="#808080">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextAccountNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@null"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView6"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F7F9FA">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                app:hintTextAppearance="@style/text_Label"
+                                app:hintTextColor="#808080">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextIfscCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@null"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView7"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F7F9FA">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                app:hintTextAppearance="@style/text_Label"
+                                app:hintTextColor="#808080">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextAccountName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@null"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F7F9FA">
+
+                        <LinearLayout
+                            android:layout_width="160dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint=""
+                                android:padding="4dp"
+                                app:hintTextAppearance="@style/text_Label"
+                                app:hintTextColor="#808080">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextAmount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@null"
+                                    android:inputType="number"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F7F9FA">
+
+                        <LinearLayout
+                            android:layout_width="160dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint=""
+                                android:padding="4dp"
+                                app:hintTextAppearance="@style/text_Label"
+                                app:hintTextColor="#808080">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextPin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@null"
+                                    android:inputType="number"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView9"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F7F9FA">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                app:hintTextAppearance="@style/text_Label"
+                                app:hintTextColor="#808080">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextRemark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@null"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <Button
+        android:id="@+id/scanbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

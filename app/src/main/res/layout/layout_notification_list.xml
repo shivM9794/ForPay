@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/gray_border2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+            android:id="@+id/layoutView"
+                >
+
+                <TextView
+                    android:padding="@dimen/_11sdp"
+                    android:id="@+id/notification_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_pending_recharge_for_mobile_90000000000_of_amount_00_is_now_success"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_minus3sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/notification_detail"
+                    android:id="@+id/notification_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_9_may_2020"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/hint_text"
+                    android:fontFamily="sans-serif"/>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+</layout>

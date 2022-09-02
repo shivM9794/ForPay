@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.flightbooking.AddTravellerFlight" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="Add Passengers"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomSheetContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Adults\n12+ years"
+                    android:textColor="@color/dark_text"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="25dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/decrease1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="2dp"
+                        android:backgroundTint="@color/green_new"
+                        android:onClick="decreaseInteger1"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/integer_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="1"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/increase1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:backgroundTint="@color/green_new"
+                        android:onClick="increaseInteger1"
+                        android:text="+"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.5"
+                android:background="@color/dark_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Children\n2-12 years"
+                    android:textColor="@color/dark_text"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/decreaseIn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="2dp"
+                        android:backgroundTint="@color/green_new"
+                        android:onClick="decreaseInteger"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/integer_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="1"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/increase"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:backgroundTint="@color/green_new"
+                        android:onClick="increaseInteger"
+                        android:text="+"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.5"
+                android:background="@color/dark_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Infant\n0-2 years"
+                    android:textColor="@color/dark_text"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="30dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/decreaseInfant"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="2dp"
+                        android:backgroundTint="@color/green_new"
+                        android:onClick="decreaseInteger2"
+                        android:text="-"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/integer_number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="1"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/increaseinfant"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:backgroundTint="@color/green_new"
+                        android:onClick="increaseInteger2"
+                        android:text="+"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.5"
+                android:background="@color/dark_text" />
+
+            <TextView
+                android:id="@+id/btnCountinue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/green_new_btn"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:onClick="continueSearch"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/continue_"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>
+

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bus_background"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Cancel Ticket"
+                    android:textColor="@color/green_new"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/back_arrow" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linSeatItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/whiterectangle2"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_travelers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/adapter_cancel_ticket" />
+
+                    <TextView
+                        android:id="@+id/txtViewAmountToBeRefunded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/txtCancelTicketDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:background="@drawable/solidprimaryrectangle"
+                        android:backgroundTint="@color/orange_new"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="Calculate Amount"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+
+                    <TextView
+                        android:id="@+id/txtAmountToBeRefunded"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:background="@drawable/solidprimaryrectangle"
+                        android:backgroundTint="@color/green_new"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="Cancellation Policy"
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <in.forpay.customfonts.MyTextViewBold
+                                    android:id="@+id/busDepartureTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/sf_bold"
+                                    android:text="Time"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.8dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:background="@color/view" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <in.forpay.customfonts.MyTextViewBold
+                                    android:id="@+id/txtGender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/sf_bold"
+                                    android:text="Charges "
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="normal" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.8dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:background="@color/view" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <in.forpay.customfonts.MyTextViewBold
+                                    android:id="@+id/busArrivalTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/sf_bold"
+                                    android:text="Refundable amount"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_cancellation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</layout>

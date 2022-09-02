@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="BusesAvailableOnJourney"
+            type="in.forpay.adapter.busbookingadapter.BusesAvailableOnJourneyAdapter" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/whiterectangle2"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/checkBoxOfTravellersItem"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <in.forpay.customfonts.MyTextViewBold
+                android:id="@+id/txtNameOfTravellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Jagdabmba Shubham Travels"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <in.forpay.customfonts.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Starts From"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <in.forpay.customfonts.MyTextView
+                android:id="@+id/txtTypeOfTravellers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_toLeftOf="@+id/txtActualPriceOfTravellers"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="AC Sleeper 2+1 Bharat Benz"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <in.forpay.customfonts.MyTextViewBold
+                android:id="@+id/txtActualPriceOfTravellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rs. 580"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imgWhatsApp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/ic_whats_app"
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <in.forpay.customfonts.MyTextViewBold
+                android:id="@+id/busDepartureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/sf_bold"
+                android:text="8:30 PM"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/busDepartureName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busDepartureTime"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/comfort_default"
+                android:textSize="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_toLeftOf="@id/txtDurationOfTravellers"
+                android:background="@color/view" />
+
+            <in.forpay.customfonts.MyTextViewBold
+                android:id="@+id/txtDurationOfTravellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/sf_bold"
+                android:text="10h 45m"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_toRightOf="@id/txtDurationOfTravellers"
+                android:background="@color/view" />
+
+            <in.forpay.customfonts.MyTextViewBold
+                android:id="@+id/busArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:fontFamily="@font/sf_bold"
+                android:text="7:45 AM"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/busArrivalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/busDepartureTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/comfort_default"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/busAlertTxt"
+            android:textColor="@color/red_light"
+
+            android:layout_gravity="center_horizontal"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <in.forpay.customfonts.MyTextView_Roboto_Italica
+                android:id="@+id/txtSeatAvailableOfTravellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="30 Seats"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="10h 45m"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="7:45 AM"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:id="@+id/btn_pay"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/solidprimaryrectangle"
+                android:backgroundTint="@color/orange_new"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <in.forpay.customfonts.MyTextView
+                    android:id="@+id/youPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="You Pay"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/txtOfferPriceOfTravellers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Rs. 400"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <in.forpay.customfonts.MyTextView
+                android:id="@+id/policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="@string/cancellation_policy"
+                android:textColor="@color/green_new"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/linBusRootItem"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/solidprimaryrectangle"
+                android:backgroundTint="@color/green_new"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_coin_earning" />
+
+                <TextView
+                    android:id="@+id/txtSavePriceOfTravellers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</layout>

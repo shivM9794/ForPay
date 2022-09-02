@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datee"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_id"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_user"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewFromUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_user"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewToUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paid_amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/textViewPaidAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

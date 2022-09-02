@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        tools:context=".fragment.recharge.OffersFragment">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:src="@drawable/btn_search_icon"
+                android:id="@+id/btn_search"/>
+
+            <EditText
+                android:lines="1"
+                android:id="@+id/edt_search"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:hint="@string/search_offer"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/search_box"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/offers_item"/>
+
+    </RelativeLayout>
+</layout>

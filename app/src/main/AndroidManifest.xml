@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.forpay"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.mantra.rdservice" />
+        <package android:name="com.scl.rdservice" />
+        <package android:name="com.secugen.rdservice" />
+        <package android:name="com.tatvik.bio.tmf20" />
+        <package android:name="com.acpl.registersdk" />
+        <package android:name="com.precision.pb510.rdservice" />
+    </queries>
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:usesCleartextTraffic,android:theme"
+        tools:targetApi="m">
+        <activity
+            android:name=".activity.forpaypremierleague.FPLChooseModeNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.forpaypremierleague.FPLNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddRechargeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.forpaypremierleague.FPLMatchDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.forpaypremierleague.FPLjoinGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.forpaypremierleague.FPLChooseModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QrCodeDecoder"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QrCodeDecoderTextView"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScratchCard"
+            android:exported="false" />
+        <activity
+            android:name=".activity.forpaypremierleague.FPLInnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.forpaypremierleague.FPLActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.smsrecharge.SMSRechargeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SensitiveInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FavMisscallRechargeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.aeps.StartAepsNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BuyTShirtAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.newaeps.StartNewAepsApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.shop.CategoryShop"
+            android:exported="false" />
+        <activity
+            android:name=".activity.shop.Shop_CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.flightbooking.BookingStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.flightbooking.SearchFlightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.flightbooking.FlightHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.flightbooking.AddTravellerFlight"
+            android:exported="false" />
+        <activity
+            android:name=".activity.flightbooking.FlightBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Distributorship.MyRetailerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BuyTShirtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Distributorship.DistributorNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PayoutNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sms.SMSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".about.About_UsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.balance.EWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddFundNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.recharge.RechargeActivityNew"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CheckOut.CouponPrepaidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Cashback_to_CouponActivity"
+            android:exported="false" />
+        <activity android:name=".activity.CheckOut.PrepaidMobileRecharge" />
+        <activity android:name=".activity.CheckOut.BeneficiaryValidate" />
+        <activity android:name=".activity.TransactionDetails.PrepaidRechargeDetails" />
+        <activity android:name=".activity.QrPaymentGenerator" />
+        <activity android:name=".activity.Webview.WebViewBrowser" />
+        <activity android:name=".activity.CashbackToCoupon" />
+        <activity android:name=".fragment.busbookingfragment.BusRouteActivity" />
+
+        <activity android:name=".activity.busbooking.BusBookingDetails" />
+
+        <activity android:name=".activity.busbooking.ActivityCancelBusTicket" />
+        <activity android:name=".activity.bbps.BbpsComplaint" />
+        <activity android:name=".activity.bbps.SearchTransaction" />
+        <activity android:name=".activity.DoYouHaveShopActivity" />
+        <activity android:name=".activity.DistributorDetailsActivity" />
+        <activity android:name=".activity.BeneficiaryValidationActivity" />
+        <activity android:name=".activity.balance.CreditCardBillPayment" />
+        <activity
+            android:name=".activity.kyc.CheckKycActivity"
+            android:theme="@style/AddKyc" />
+        <activity android:name=".activity.PayoutActivity" />
+        <activity
+            android:name=".activity.VideoViewActivity"
+            android:configChanges="keyboard|orientation|screenSize" />
+
+        <service
+            android:name=".util.gcmService"
+            android:exported="true"
+            tools:ignore="ExportedService,InnerclassSeparator"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.aeps.StartAepsApiActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.aeps.StartAepsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.ServerNotResponseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.premiumplan.PremiumPlanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.Distributorship.DistributorshipActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ProductSuggestionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.MyProductActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.PlusActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.balance.MobileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.balance.LandLineActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.balance.GiftVoucherDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateVisible|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.balance.GiftVoucherActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.OrderDataActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.LocationShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.LocationDeliveryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.OrderProcessingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.DetailsOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopCategoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".activity.shop.MainShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.AddShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.LocationAddActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.LocationSelectorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopSubCategoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.GenerateNewOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateVisible|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.UserReviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopReviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.SoldOrderListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.SoldOrderDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopListChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.ShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.RatingOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.MyRatingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.shop.MyPurchaseOrdersActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopTheme"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.kyc.AddKycActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.kyc.AadhaarKycActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.LoginHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.supportchat.ImageDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.supportchat.SupportChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.FullSummeryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.RecentTransactionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.DailyEarningActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.DailySummeryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.busbooking.SearchFromStationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.busbooking.BusBookingActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.google.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RechargeDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".webView.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.LoginActivity1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.RechargeProcessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.ActiveDeviceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.OffersActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.moneytransfer.RegisterMobileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.psa.RegisterMobileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.CheckHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.moneytransfer.BeneficiaryListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".paytm.checkSum"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".paytm.razorpay"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.AddfundActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.recharge.RechargeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.moneytransfer.MoneyTransferActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.balance.DmtActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.billpayment.BillPaymentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.PanAgentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.digitalgiftvoucher.DigitalGiftVouchersActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.profile.ProfileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.recharge.RechargeHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.BalanceHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.BankDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.FundRequestActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.FavContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.LanguageChangeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.StockHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.InviteActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.bbps.RaiseComplaint"
+            android:theme="@style/AddKyc" />
+        <activity android:name=".activity.bbps.ComplaintStatusActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4249580117963409~8678147471" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_XcHXmBED1xb3gE" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.com.aumfibrofil.aum.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:node="merge">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="in.forpay.activity.TransactionDetails.PrepaidRechargeDetails.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <receiver
+            android:name=".activity.InstallReceiver"
+            android:exported="true"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="SeatBookingFragment"
+            type="in.forpay.fragment.busbookingfragment.SeatBookingFragment" />
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/whiterectangle2"
+        android:orientation="vertical"
+        tools:context=".fragment.busbookingfragment.SeatBookingFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_available"
+                    android:fontFamily="@font/poppins_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/available"
+                    android:textColor="@color/gray" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_booked"
+                    android:backgroundTint="@color/orange_new"
+                    android:fontFamily="@font/poppins_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/booked"
+                    android:textColor="@color/gray" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_ladies"
+                    android:fontFamily="@font/poppins_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/ladies"
+                    android:textColor="@color/gray" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_selected"
+                    android:backgroundTint="@color/green_new"
+                    android:fontFamily="@font/poppins_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/selected"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup
+                android:id="@+id/radioGrpOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/btnLowerBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_round"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="LOWER DECK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RadioButton
+                    android:id="@+id/btnUpperBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@drawable/green_round_border"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="UPPER DECK"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:visibility="visible"
+                    android:id="@+id/frameLowerBirth"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/frameUpperBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+
+
+
+
+        </ScrollView>-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_lower"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/imgDriver"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/ic_driver_steering"
+                        android:visibility="visible"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ll_seats_lower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="vertical" />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_upper_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ll_seats_upper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="vertical" />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</layout>
+

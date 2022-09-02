@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.PlusActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/gray_border_plus"
+                android:layout_toStartOf="@id/close">
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search"
+                    android:textColorHint="@color/gray_shop"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_8sdp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/gray_border_plus"
+                android:backgroundTint="@color/green_new"
+                android:gravity="center"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:text="@string/close"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <in.forpay.util.WrapContentViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/dotsIndicator"
+            android:layout_below="@id/topLayout"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/noDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/noDataFound"
+            android:gravity="center"
+            android:layout_below="@id/viewPager"
+            android:layout_above="@+id/dotsIndicator"
+            android:visibility="visible"/>
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:piv_animationType="thinWorm"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_selectedColor="@color/gray_shop"
+            app:piv_unselectedColor="@color/gray_view"
+            app:piv_viewPager="@id/viewPager" />
+
+
+
+    </RelativeLayout>
+</layout>

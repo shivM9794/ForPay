@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.PayoutActivity" />
+    </data>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutBank"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/gray_border">
+
+    <LinearLayout
+        android:id="@+id/foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtAccountName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Account Name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/accountName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtAccountNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Account Number"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/accountNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtIfscCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="IFSC Code"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/ifscCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutCopy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/deleteButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@color/orange_new"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="@string/delete"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="@dimen/_9sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewPayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/green_new"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="PAYOUT"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="@dimen/_9sdp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

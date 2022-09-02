@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:background="@color/green_new"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/poppins_bold"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="1dp"
+                        android:text="Create Group"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip">
+
+                    <EditText
+                        android:id="@+id/edtgname"
+                        style="@style/etStyleRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dip"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Enter Group Name"
+                        android:inputType="text"
+                        android:maxLength="12"
+                        android:textColor="@color/black_txt"
+                        android:textColorHint="@color/hint_text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Select Group Type" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonprivate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:checked="false"
+                        android:text="Private"
+                        android:value="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonpublic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:checked="false"
+                        android:text="Public"
+                        android:value="0" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Select Joining Point" />
+
+                <RadioGroup
+                    android:id="@+id/rg_no_of_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/radio_btn_bg_size"
+                    android:orientation="horizontal"
+
+                    android:padding="@dimen/_5sdp">
+
+                    <RadioButton
+                        android:id="@+id/tv_10"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="10"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/tv_20"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="20"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/tv_50"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="50"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/tv_100"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="100"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/tv_200"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_seat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="200"
+                        android:textColor="@drawable/radio_grp_txt"
+                        android:textStyle="bold" />
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip">
+
+                        <EditText
+                            android:id="@+id/edtpoints"
+                            style="@style/etStyleRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3.0dip"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="Enter Joining Points"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:textColor="@color/black_txt"
+                            android:textColorHint="@color/hint_text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/subbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:background="@drawable/abc_btn_colored_material"
+                    android:backgroundTint="@color/green_new"
+                    android:paddingVertical="@dimen/_13sdp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

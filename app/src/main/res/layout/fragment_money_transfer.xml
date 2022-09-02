@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.activity.moneytransfer.MoneyTransferActivity" />
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_design"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".fragment.moneytransfer.MoneyTransferFragment">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:orientation="vertical"
+            android:background="@color/green_new">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/back_arrow"
+                    android:layerType="software"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:paddingBottom="1dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_title_moneytransfer"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/appbar_layout"
+            android:id="@+id/linearLayoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:src="@drawable/btn_search_icon"
+                    android:id="@+id/btn_search_icon"
+                    android:layout_marginStart="@dimen/_4sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray"
+                    android:layout_marginStart="@dimen/_2sdp"/>
+
+                <EditText
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/editTextMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="@string/hint_enter_mobile"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/dark_text"
+                    android:textSize="@dimen/_11sdp" />
+                <ImageView
+                    android:id="@+id/btn_search"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/primary_btn"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_search"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayoutBeneficiary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_add_backancy2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/green_new_btn"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:text="Add Beneficiary"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/btn_backancy_list2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/green_new_btn"
+                    android:backgroundTint="@color/orange_new"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:text="Beneficiary List"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/linearLayoutDetail"
+            android:layout_below="@+id/linearLayoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile: "
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/textViewMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limit: "
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/textViewLimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance: "
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/textViewBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/orange_new"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_add_backancy"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/green_new_btn"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:text="Add Beneficiary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/btn_backancy_list"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/green_new_btn"
+                        android:backgroundTint="@color/orange_new"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:text="Beneficiary List"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+</layout>

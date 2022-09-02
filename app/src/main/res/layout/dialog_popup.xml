@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Request Detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_9sdp"
+            android:paddingBottom="@dimen/_9sdp"
+            android:background="@color/green_new"
+            android:textStyle="bold" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:layout_above="@id/textViewCancel">
+
+            <LinearLayout
+                android:id="@+id/mainLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/textViewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:background="@drawable/white_less_corner_bg"
+            android:backgroundTint="@color/orange_new"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

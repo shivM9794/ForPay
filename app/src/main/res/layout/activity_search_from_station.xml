@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="SearchStationActivity"
+            type="in.forpay.activity.busbooking.SearchFromStationActivity" />
+
+    </data>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bus_background"
+        android:orientation="vertical"
+        tools:context=".activity.busbooking.SearchFromStationActivity">
+
+
+        <LinearLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:background="@color/green_new">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="Search Station"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/editSearchStation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/tvClear"
+                    android:background="@drawable/gray_border_second"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusedByDefault="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_city"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textCursorDrawable="@drawable/gray_cursor"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvClear"
+                    style="@style/tvStyleSemibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/primary_btn"
+                    android:backgroundTint="@color/orange_new"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="10dp"
+                    android:text="@string/clear"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recSearchStation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</layout>
+

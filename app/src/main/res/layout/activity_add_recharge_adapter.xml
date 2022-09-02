@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="in.forpay.adapter.AddRechargeAdapter" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="242dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_border_balance_bg">
+
+                <ImageView
+                    android:id="@+id/brand_icon"
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/airtel" />
+
+                <ImageView
+                    android:id="@+id/bg"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_toEndOf="@id/brand_icon"
+                    android:src="@drawable/un_select_balance" />
+
+                <ImageView
+                    android:id="@+id/select"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_toEndOf="@id/brand_icon"
+                    android:src="@drawable/select_balance" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/brand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/sf_regular"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/bottomLayout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="visible"-->
+<!--                android:paddingTop="@dimen/_20sdp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/editText"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@null"-->
+<!--                    android:fontFamily="@font/sf_regular"-->
+<!--                    android:hint=""-->
+<!--                    android:inputType="text|number"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="@color/hint_color"-->
+<!--                    android:textSize="@dimen/_14sdp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    android:background="@color/gray_view" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/label"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_3sdp"-->
+<!--                    android:layout_marginTop="@dimen/_minus1sdp"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="@dimen/_10sdp" />-->
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/editAmtUser"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:background="@null"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:hint="Enter Amount "-->
+<!--                    android:inputType="text"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="@color/hint_color"-->
+<!--                    android:textSize="@dimen/_14sdp" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/view_ewallet8"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:background="@color/gray_view" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rechargeButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:background="@drawable/white_less_corner_bg"-->
+<!--                    android:backgroundTint="@color/green_new"-->
+<!--                    android:fontFamily="@font/sf_bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:onClick="rechargeBtn"-->
+<!--                    android:paddingStart="@dimen/_9sdp"-->
+<!--                    android:paddingTop="@dimen/_10sdp"-->
+<!--                    android:paddingEnd="@dimen/_9sdp"-->
+<!--                    android:paddingBottom="@dimen/_10sdp"-->
+<!--                    android:text="@string/recharge"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_15sdp" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

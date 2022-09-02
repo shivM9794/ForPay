@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <FrameLayout
+            android:id="@+id/inflateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:clipToPadding="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:listitem="@layout/adapter_shop_subcategory_list"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

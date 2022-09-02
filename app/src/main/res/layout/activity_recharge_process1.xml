@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.RechargeProcessActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/balance_bg">
+
+        <!-- Header aligned to top -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#FC9"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Fixed Header"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- Footer aligned to bottom -->
+        <!-- Footer aligned to bottom -->
+
+
+        <LinearLayout
+            android:id="@+id/LLMAIN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar2" />
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11.7dp"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp">
+
+                            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/textViewRemarkLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/title_details"
+                                android:textColor="@color/green_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="normal" />
+
+                            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/textViewRemark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:autoLink="web"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/title_payment_processing"
+                                android:textColor="@color/orange_new"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/title_available_balance"
+                                android:textColor="@color/green_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_5sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_23sdp"
+                                    android:layout_height="@dimen/_23sdp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:src="@drawable/ic_rupee"
+                                    app:tint="@color/orange_new" />
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/textViewCurrentBal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:textColor="@color/orange_new"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="normal"
+
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/favContactStar"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="21dp"
+                            android:layout_marginRight="18.3dp"
+                            android:src="@drawable/star" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="11.7dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/operatoriv"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_phone" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp">
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/title_mobile"
+                                    android:textColor="@color/green_new"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="normal" />
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/textViewMobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:textColor="@color/orange_new"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/profitlay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                tools:visibility="visible">
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Medium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/title_profit"
+                                    android:textColor="@color/green_new"
+                                    android:textSize="18.3sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:background="@drawable/green_border_white_fill_bg"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/coin" />
+
+                                    <TextView
+                                        android:id="@+id/textViewProfit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_6sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:text="₹ 0"
+                                        android:textColor="@color/green_new"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="0dp">
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/title_service_charge"
+                                    android:textColor="@color/geryTxt"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="normal" />
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/textViewServiceCharge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="@dimen/_10sdp">
+
+                                <in.forpay.customfonts.MyTextView_Roboto_Medium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/title_youpay"
+                                    android:textColor="@color/orange_new"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="normal"
+
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/orange_border_white_fill_bg"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/coin" />
+
+                                    <TextView
+                                        android:id="@+id/textViewPayAmount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_6sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:text="₹ 0"
+                                        android:textColor="@color/orange_new"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="0dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/title_customer_pay"
+                                android:textColor="@color/orange_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/green_new_btn"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_18sdp"
+                                        android:layout_height="@dimen/_18sdp"
+                                        android:padding="@dimen/_2sdp"
+                                        android:src="@drawable/coin" />
+
+                                    <TextView
+                                        android:id="@+id/textViewCusPayAmount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_6sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:text="₹ 0"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/couponLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/title_coupon"
+                                android:textColor="@color/orange_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/green_new_btn"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_5sdp">
+
+                                    <TextView
+                                        android:id="@+id/textViewCoupon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_6sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLWarning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="#ABDDAD"
+                        android:gravity="center">
+
+
+                        <in.forpay.customfonts.MyTextView_Roboto_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/poppins_regular"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingEnd="0dp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/title_transaction_confirmation_warning"
+                            android:textColor="@color/failed"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewProcessPayment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/green_new_btn"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="@string/title_confirm_payment"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

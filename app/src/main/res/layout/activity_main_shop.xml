@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.shop.MainShopActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg_shop">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/green_new">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/menu"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sf_bold"
+                android:text="Shops"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_size" />
+
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/search"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:clipToPadding="false"
+            android:layout_above="@id/startDelivery"
+            tools:listitem="@layout/adapter_shop_extra"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/startDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:contentPaddingTop="@dimen/_8sdp"
+            app:contentPaddingBottom="@dimen/_8sdp"
+            app:contentPaddingLeft="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/cart" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Delivery"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/sf_regular"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/next_purple"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</layout>

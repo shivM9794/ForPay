@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.fragment.MyMarginFragment" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        tools:context=".fragment.MyMarginFragment">
+
+        <EditText
+            android:id="@+id/editTestSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_rect_red"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/dark_text"
+            android:hint="Search"
+            android:lines="1"
+            android:padding="10dp"
+            android:textColor="@color/dark_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTestSearch"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/textViewNoDataFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No data found"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

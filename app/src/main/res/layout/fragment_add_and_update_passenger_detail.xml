@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="AddAndUpdatePassenger"
+            type="in.forpay.fragment.busbookingfragment.AddAndUpdatePassengerDetail" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="Add Passenger"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bt_add_passenger"
+            android:layout_below="@+id/linHeader"
+            android:padding="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_30sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_info_passanger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_title_label"
+                            style="@style/tvStyleRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/title" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_mr"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/mr" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ms"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/ms"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_mrs"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/mrs" />
+
+                        <RadioButton
+                            android:id="@+id/rb_mstr"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/mstr"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_miss"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/miss"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_passenger_first_name"
+                        style="@style/etStyleRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/first_name_start"
+                        android:inputType="none|text|textCapWords|textCapSentences"
+                        android:text=""
+                        android:textColor="@color/dark_text"
+                        android:textColorHint="@android:color/transparent"
+                        android:textSize="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_passenger_last_name"
+                        style="@style/etStyleRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/last_name_star"
+                        android:inputType="none|text|textCapWords|textCapSentences"
+                        android:text=""
+                        android:textColorHint="@android:color/transparent"
+                        android:textSize="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_age"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="2"
+                        android:visibility="visible">
+
+                        <EditText
+                            android:id="@+id/et_age"
+                            style="@style/etStyleRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="@string/age"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textColorHint="@android:color/transparent" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_gender_label"
+                        style="@style/tvStyleRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/gender" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/male" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            style="@style/semibolidGrey12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/female" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_mobile_no"
+                        style="@style/etStyleRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColorHint="@android:color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/bt_add_passenger"
+            style="@style/commonStyleBottomBtnBlue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_green"
+            android:backgroundTint="@color/orange_new"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/add"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+
+</layout>
+

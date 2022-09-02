@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottomSheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_new"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="No of Passengers"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="@dimen/_2sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_close1"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Adults\n12+ years"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="25dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/decrease1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="@color/green_new"
+                    android:onClick="decreaseInteger"
+                    android:text="-"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/integer_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="1"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/increase1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:backgroundTint="@color/green_new"
+                    android:onClick="increaseInteger"
+                    android:text="+"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_text"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Children\n2-12 years"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/decreaseIn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="@color/green_new"
+                    android:onClick="decreaseInteger"
+                    android:text="-"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/integer_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="1"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/increase"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:backgroundTint="@color/green_new"
+                    android:onClick="increaseInteger"
+                    android:text="+"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_text"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Infant\n0-2 years"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="25dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/decreaseInfant"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="@color/green_new"
+                    android:onClick="decreaseInteger"
+                    android:text="-"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/integer_numberinfant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="1"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/increaseinfant"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:backgroundTint="@color/green_new"
+                    android:onClick="increaseInteger"
+                    android:text="+"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_text"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

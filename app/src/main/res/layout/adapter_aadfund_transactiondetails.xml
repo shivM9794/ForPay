@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/gray_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textOrderID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Order Id :"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewAmount"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:layout_marginStart="90dp"
+                        android:textColor="@color/orange_new"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+<!--                    <TextView-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Method :"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_10sdp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:id="@+id/amountLabel"/>-->
+
+<!--                    <TextView-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/textViewAmount"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_5sdp"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@color/orange_new"-->
+<!--                        android:textSize="@dimen/_10sdp" />-->
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/amountLabelRef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Reference No :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewRefNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/orange_new"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/mobileLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/priceLayout"
+                        android:layout_toStartOf="@+id/priceLayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewTime"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:layout_toStartOf="@id/priceLayout"-->
+<!--                            android:fontFamily="@font/poppins_regular"-->
+<!--                            android:text=""-->
+<!--                            android:textColor="@color/orange_new"-->
+<!--                            android:textSize="@dimen/_10sdp" />-->
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/priceLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textViewClosingBalance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/orange_round_border"
+                            android:backgroundTint="@color/green_new"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text="0.00"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

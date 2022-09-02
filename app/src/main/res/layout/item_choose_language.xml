@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:foreground="?android:selectableItemBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_check_done" />
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/tv_name"
+            style="@style/tvStyleSemibold"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:padding="15.0dip"
+            android:text="@string/english"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/tv_name_en"
+            style="@style/tvStyleSemibold"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:padding="15.0dip"
+            android:text="@string/default_language"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new"/>
+</LinearLayout>

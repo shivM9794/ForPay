@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/textViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/title_buy_psa_coupon"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        style="@style/etStyleRegular"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/editViewNumberCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_coupon_number"
+        android:inputType="number"
+        android:maxLength="2"
+        android:lines="1"
+        android:background="@color/white"
+        android:textColor="@color/dark_text"
+        android:textColorHint="@color/hint_color"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:id="@+id/viewLineAmount"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new" />
+
+    <EditText
+        style="@style/etStyleRegular"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/editViewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:textColorHint="@color/hint_color"
+        android:hint="@string/hint_pin"
+        android:inputType="numberPassword"
+        android:lines="1"
+        android:textColor="@color/dark_text"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:id="@+id/viewLinePin"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewBuyCouponn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/aqua_btn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_25sdp"
+            android:paddingStart="@dimen/_25sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/title_buynow"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</LinearLayout>

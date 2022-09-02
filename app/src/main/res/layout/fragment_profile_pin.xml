@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.fragment.ProfilePinFragment" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/balance_bg">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                tools:context=".fragment.ProfilePinFragment">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:visibility="visible">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip">
+                            <EditText
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/editTextNewPin"
+                                style="@style/etStyleRegular"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3.0dip"
+                                android:hint="@string/hint_new_pin"
+                                android:textColorHint="@color/hint_text"
+                                android:inputType="numberPassword"
+                                android:maxLength="4" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip">
+                            <EditText
+                                android:textColorHint="@color/hint_text"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:id="@+id/editTextReEnterPin"
+                                style="@style/etStyleRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3.0dip"
+                                android:hint="@string/hint_repeat_pin"
+                                android:inputType="number"
+                                android:maxLength="4" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:id="@+id/LapyoutOtp"
+                            android:visibility="gone">
+                            <EditText
+                                android:textColorHint="@color/hint_text"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:id="@+id/editTextOtp"
+                                style="@style/etStyleRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3.0dip"
+                                android:hint="@string/hint_enter_otp"
+                                android:inputType="number"
+                                android:maxLength="6" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/submitTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/green_new_btn"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="@string/title_changepin"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

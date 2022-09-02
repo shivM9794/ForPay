@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tabBackground"
+        tools:context=".activity.LoginHistoryActivity">
+
+        <LinearLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="@string/activeLogin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_below="@id/appbar_layout"
+            android:background="@color/white"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            android:id="@+id/search_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/inflateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_box">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/device_list_recycle"
+                android:overScrollMode="never"
+                tools:listitem="@layout/item_login_history"
+                />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentBusDetailsHolder">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".activity.RechargeDetailsActivity">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:id="@+id/appbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/back_btn"
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:src="@drawable/back_arrow"
+                            android:layout_centerVertical="true"
+                            android:layerType="software"
+                            android:layout_marginStart="@dimen/_10sdp"/>
+
+                        <TextView
+                            android:id="@+id/recharge_title"
+                            android:paddingBottom="1dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="9"
+                            android:layout_height="wrap_content"
+                            android:text="@string/icon_title_recharge_history"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/green_new"
+                            />
+
+                        <ImageView
+                            android:id="@+id/sharebtn"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_width="@dimen/_21sdp"
+                            android:layout_height="@dimen/_21sdp"
+                            app:srcCompat="@drawable/ic_share_black_24dp"
+                            app:tint="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layerType="software"
+                            android:layout_toStartOf="@id/refreshbtn"/>
+
+                        <ImageView
+                            android:id="@+id/refreshbtn"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_width="@dimen/_21sdp"
+                            android:layout_height="@dimen/_21sdp"
+                            android:src="@drawable/ic_refresh_two"
+                            app:tint="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layerType="software"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_below="@id/appbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_60sdp"
+                        android:layout_marginStart="@dimen/_24sdp"
+                        android:layout_marginEnd="@dimen/_24sdp"
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/orange_border_white_fill_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_28sdp"
+                            android:id="@+id/thanklay"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/statustitle"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="24sp"
+                                android:layout_gravity="center"
+                                android:text="Please Wait!"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/statusmsg"
+                                android:layout_gravity="center"
+                                android:text="Your transaction is pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/topLayout"
+                            android:layout_below="@+id/thanklay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:paddingStart="@dimen/_10sdp">
+
+                            <in.forpay.customfonts.MyTextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/operatortv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Operator"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_toStartOf="@+id/operatoriv"/>
+
+                            <!-- <ImageView
+                                 android:id="@+id/statusiv"
+                                 android:layout_width="@dimen/_34sdp"
+                                 android:layout_height="@dimen/_34sdp"
+                                 android:layout_gravity="center"
+                                 android:scaleType="fitXY"
+                                 android:src="@drawable/tickmark"
+                                 android:layout_alignParentEnd="true"/>-->
+
+                            <ImageView
+                                android:id="@+id/operatoriv"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:srcCompat="@drawable/ic_recharge3"
+                                android:layout_alignParentEnd="true"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:src="@drawable/dotted_line"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:layout_marginEnd="@dimen/_24sdp"
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_below="@id/topLayout"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:paddingEnd="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:background="@drawable/whiterectangle"
+                            android:orientation="vertical"
+                            android:gravity="top"
+                            android:layout_below="@id/view"
+                            android:layout_above="@id/textViewRefund">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/date"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_bold"
+                                        android:id="@+id/rechargedontv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="2019-01-01 23:59:59"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/time"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_bold"
+                                        android:id="@+id/rechargedontime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text="2019-01-01 23:59:59"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_12sdp"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/name1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_mobile"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/mobilenumtv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="9000000000"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/transaction_id"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/transactionidtv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text="@string/title_transactionid"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bbpsBillerLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <LinearLayout
+
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/bbpsLinear"
+                                >
+
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/bbpsIcon"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+
+                                    android:layout_gravity="center"
+                                    android:foregroundGravity="center"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_width="@dimen/_52sdp"
+                                    android:layout_height="@dimen/_52sdp"
+
+                                    />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/bbpsBillerIdAndConsumerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Biller id"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsId"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/bbpsConsumerNameLL"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Consumer Name"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsBillerNameText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bill Date"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsBillDateTxt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bill Peroid"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsBillPeriodText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bill Number"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsBillNumberText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Due Date"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsDueDateText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="CCF"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsCcfText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payment Mode"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bbpsPaymentModeText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/orderidtvLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_order_id"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/orderidtv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/creditusedLabel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_debit_amount"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/creditused"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text="00 Rs"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:text="@string/title_amount"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:id="@+id/rechargeamttv"
+                                        android:fontFamily="@font/poppins_bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/rupee"
+                                        android:textColor="@color/green_new"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:visibility="invisible"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:text="@string/title_status"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:textAlignment="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/statustv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bg_gray_circular_outlined"
+                                        android:text="@string/title_status"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/_10sdp"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/bankaccounttvLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:id="@+id/bankAccountTextView"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_bank_account"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/bankaccounttv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bank Account"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/accountnametvLabel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_name"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/accountnametv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text="Account Name : "
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/paidAmountLabel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paid Amount"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/paidAmount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/remarkLabel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <in.forpay.customfonts.MyTextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_remark"
+                                        android:textColor="@color/textSub"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:id="@+id/remark"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiterectangle"
+                                        android:text="Remark"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+                            <ImageView
+                                android:id="@+id/sharebtn1"
+                                android:layout_gravity="end"
+                                android:layout_width="@dimen/_21sdp"
+                                android:layout_height="@dimen/_21sdp"
+                                app:srcCompat="@drawable/ic_share_black_24dp"
+                                app:tint="@color/green_new"
+                                android:layerType="software"/>
+
+
+                        </LinearLayout>
+
+
+                        <in.forpay.customfonts.MyTextView
+                            android:fontFamily="@font/poppins_bold"
+                            android:id="@+id/textViewRefund"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/white_less_corner_bg"
+                            android:backgroundTint="@color/green_new"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:text="@string/title_complain"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/statuslogo"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@drawable/bg_full_circle"
+                        app:srcCompat="@drawable/ic_baseline_warning_24"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"/>
+
+                    <ImageView
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:id="@+id/back"
+                        app:tint="@color/light_gray"
+                        android:layout_gravity="bottom|center_horizontal"
+                        app:srcCompat="@drawable/ic_cancel_circle"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"/>
+
+                </FrameLayout>
+
+                <!--            <com.google.android.gms.ads.AdView-->
+                <!--                xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+                <!--                android:id="@+id/adView"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center_horizontal"-->
+                <!--                ads:adSize="BANNER"-->
+                <!--                ads:adUnitId="ca-app-pub-4249580117963409/8486575784"-->
+                <!--                android:layout_alignParentBottom="true"-->
+                <!--                android:layout_centerHorizontal="true">-->
+                <!--            </com.google.android.gms.ads.AdView>-->
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+
+    </ScrollView>
+</layout>

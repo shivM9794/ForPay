@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Balance Detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_9sdp"
+            android:paddingBottom="@dimen/_9sdp"
+            android:background="@color/green_new"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.7dp"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <in.forpay.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/gray_main_balance"
+                        android:text="Order Id  " />
+                    <in.forpay.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="normal"
+                        android:textColor="@color/orange_new"
+                        android:text=""
+                        android:id="@+id/textViewOrderId"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <in.forpay.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/title_amount"
+                        />
+
+                    <in.forpay.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="normal"
+                        android:textColor="@color/green_new"
+                        android:text=""
+                        android:id="@+id/textViewAmount"
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/operatoriv"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_phone"
+                android:layout_marginEnd="@dimen/_12sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/title_mobile"
+
+                android:textColor="@color/gray_main_balance"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/orange_new"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:id="@+id/textViewMobile"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Service"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/green_new"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:id="@+id/textViewService"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_5sdp">
+
+                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/title_transactionid"
+
+                    android:textColor="@color/gray_main_balance"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <in.forpay.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text=""
+                    android:textColor="@color/green_new"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:id="@+id/textViewTransId"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/green_new_btn"
+                android:orientation="horizontal"
+                android:id="@+id/LLStatus"
+                >
+
+
+
+                <TextView
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76.3dp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:background="@color/white">
+            <in.forpay.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textStyle="bold"
+
+                android:textColor="@color/gray_main_balance"
+                android:text="@string/title_bank_account"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/green_new_btn"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:id="@+id/textViewBankAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/gray_new" />
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/orange_less_border"
+            android:backgroundTint="@color/orange_new"
+            android:id="@+id/textViewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:text="@string/title_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

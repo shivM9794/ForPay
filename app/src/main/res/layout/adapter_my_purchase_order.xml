@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner_shadow"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/orderLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Id : "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sf_regular"
+                    android:textSize="@dimen/_11sdp"/>
+
+                <TextView
+                    android:id="@+id/orderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="123456"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sf_regular"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_toEndOf="@id/orderLable"/>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/sf_regular"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/orderId"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_below="@id/topLayout">
+
+                <TextView
+                    android:id="@+id/item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mi 9pro Max"
+                    android:fontFamily="@font/sf_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_toStartOf="@id/ratingLayout"/>
+
+                <LinearLayout
+                    android:id="@+id/ratingLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/rateUsImg"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:src="@drawable/rate_us"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_18sdp"
+                        android:text="5.0 Rating"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sf_regular"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15/26 ,2nd floor main road near jail chock main road, near Gokul complex"
+                android:textColor="@color/gray_shop"
+                android:fontFamily="@font/sf_regular"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_below="@id/middleLayout"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_shop"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/_9sdp"
+                    android:fontFamily="@font/sf_regular"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Jan 2020"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sf_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="@dimen/_9sdp"
+                    android:fontFamily="@font/sf_regular"/>
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 14000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sf_regular"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/viewOrder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="View Order"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/sf_bold"
+                android:gravity="center"
+                android:background="@drawable/white_less_corner_bg"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

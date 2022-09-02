@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:background="@drawable/white_top_corner_bg"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/topLayout"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:background="@drawable/light_gray_back"
+                    android:id="@+id/transactionSuccess"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/success_1000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/green_new"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:background="@drawable/light_gray_back"
+                    android:id="@+id/transactionPending"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/pending_1200"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/green_new"
+                    android:fontFamily="sans-serif"/>
+
+                <LinearLayout
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:background="@drawable/light_gray_back"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/profit_data"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/transactionDisputed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10000"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"/>
+
+                     <TextView
+                         android:id="@+id/cusCreditUsed"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/_500"
+                         android:textStyle="bold"
+                         android:textSize="@dimen/_12sdp"
+                         android:textColor="@color/black"
+                         android:fontFamily="sans-serif"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transactionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0000_00_00"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="end"
+                android:textColor="@color/gray"
+                android:fontFamily="sans-serif"
+                android:layout_below="@id/topLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/primary_half_round"
+            android:id="@+id/top_menu"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtProfit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/net_profit_500_rs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1500"
+                android:id="@+id/txtPaidAmount"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/_14sdp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/bgofplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_flight_bg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:padding="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bgofplayer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/_5sdp"-->
+<!--        android:padding="@dimen/_5sdp"-->
+<!--        app:cardCornerRadius="@dimen/_5sdp">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/playericon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/playericon"
+                app:layout_constraintEnd_toStartOf="@id/ll_points"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/pname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/runwicket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_points"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical|end"
+                android:orientation="vertical"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ppoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/orange_border_white_fill_bg"
+                        android:backgroundTint="@color/green_new"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/threedotimg"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/threedotimg"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/ic_more"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    tools:text="" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    </LinearLayout>-->
+
+    </LinearLayout>
+
+</layout>

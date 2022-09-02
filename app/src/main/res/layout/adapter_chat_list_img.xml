@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/chat_root_view_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/chat_image"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/chat_placeholder"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_image"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/is_msg_sent"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:src="@drawable/msg_sent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

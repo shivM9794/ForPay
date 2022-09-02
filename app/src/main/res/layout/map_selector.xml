@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/locationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/white_corner_shadow"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/selectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Shop Location"
+        android:fontFamily="@font/sf_regular"
+        android:padding="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:background="@null"
+        android:layout_toStartOf="@id/locationImg"/>
+
+    <ImageView
+        android:id="@+id/locationImg"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/location"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:padding="@dimen/_2sdp"/>
+
+</RelativeLayout>

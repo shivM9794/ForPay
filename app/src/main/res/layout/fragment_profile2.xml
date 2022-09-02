@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.activity.profile.ProfileActivity" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:background="@color/balance_bg"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".fragment.ProfileFragment2">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/back_arrow"
+                    android:layout_centerVertical="true"
+                    android:layerType="software"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="@string/tab_profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+       <!-- <com.google.android.material.tabs.TabLayout
+            android:background="@color/light_green"
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorHeight="@dimen/_1sdp"
+            app:tabRippleColor="@null"
+            app:tabTextColor="@color/white"
+            android:layout_marginTop="@dimen/_5sdp"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingStart="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_weight="1"
+                    android:text="@string/profile"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:background="@drawable/white_less_corner_bg"
+                    android:backgroundTint="@color/orange_new"/>
+
+                <View
+                    android:id="@+id/profileTriangle"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/green_arrow_gradient"
+                    android:backgroundTint="@color/orange_new"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_weight="1"
+                    android:text="@string/pin"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:background="@drawable/white_less_corner_bg"
+                    android:backgroundTint="@color/green_new"/>
+
+                <View
+                    android:id="@+id/pinTriangle"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/green_arrow_gradient"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_weight="1"
+                    android:text="PASSWORD"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:background="@drawable/white_less_corner_bg"
+                    android:backgroundTint="@color/green_new"/>
+
+                <View
+                    android:id="@+id/passwordTriangle"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/green_arrow_gradient"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:background="@color/balance_bg"
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</layout>

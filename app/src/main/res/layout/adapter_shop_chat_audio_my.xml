@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/not_send_messsage"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:src="@drawable/not_send_audio_message"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toLeftOf="@+id/not_send_messsage">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/gray"
+                android:visibility="gone"
+                android:id="@+id/datetxt"/>
+
+
+
+            <ProgressBar
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:visibility="gone"
+                android:id="@+id/p_bar"
+                android:indeterminateTint="@color/purple"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/datetxt"
+                android:layout_toLeftOf="@+id/audio_bubble" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_7sdp"
+                android:layout_below="@id/datetxt"
+                android:id="@+id/audio_bubble"
+                android:background="@drawable/shop_chat_my_bg"
+                android:layout_toStartOf="@id/triangleImg">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/play_btn"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:background="@color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play_icon"
+                        app:tint="@color/white" />
+
+                   <!-- <ImageView
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:id="@+id/pause_btn"
+                        android:scaleType="fitXY"
+                        android:tint="@color/white"
+                        android:src="@drawable/pause_icon"
+                        android:visibility="gone"
+                        android:background="@color/transparent"/>-->
+
+                    <SeekBar
+                        android:id="@+id/seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_26sdp"
+                        android:layout_toStartOf="@+id/total_time"
+                        android:theme="@style/MySeekBar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:id="@+id/total_time"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/triangleImg"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/shop_chat_my_triangle"
+                android:scaleType="fitXY"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/audio_bubble"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/audio_bubble"
+                android:textSize="@dimen/_9sdp"
+                android:id="@+id/msgTime"
+                android:text=""
+                android:paddingEnd="@dimen/_9sdp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toStartOf="@+id/is_msg_sent"/>
+
+            <ImageView
+                android:id="@+id/is_msg_sent"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:src="@drawable/msg_sent"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/audio_bubble"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

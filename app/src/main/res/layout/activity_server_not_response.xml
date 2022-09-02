@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ServerNotResponseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/balance_bg">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:bufferType="spannable"
+            android:layerType="software"
+            app:srcCompat="@drawable/server_img"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/sf_regular"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="@string/server_not_responding"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/white_corner_bg"
+            android:backgroundTint="@color/orange_new"
+            android:bufferType="spannable"
+            android:layerType="software"
+            android:paddingStart="@dimen/_50sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="Back"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</layout>

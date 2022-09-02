@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.QrCodeDecoderTextView" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="QR Scanner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appbar_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_new" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/recharge_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="20dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/black"
+
+            app:layout_constraintTop_toBottomOf="@+id/appbar_layout1"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+        <TextView
+            android:id="@+id/openActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/abc_btn_colored_material"
+            android:backgroundTint="@color/orange_new"
+            android:elevation="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="Open With App"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_msg"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/gray_border_balance_bg"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/airtel"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/un_select_balance"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_toEndOf="@id/image"/>
+
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_toEndOf="@id/image"
+                android:src="@drawable/select_balance" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/sf_regular"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+</layout>

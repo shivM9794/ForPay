@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.flightbooking.SearchFlightActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@color/green_new"
+            app:layout_constraintHeight_percent=".10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/back_arrow"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="11dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtSource"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="New Delhi"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp" />
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_23sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:src="@drawable/next_orange"
+                                    app:tint="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/txtDestination"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="Mumbai"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="60dp"
+                                    android:gravity="end">
+
+
+                                <ImageView
+                                    android:id="@+id/btn_filter_flight"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:bufferType="spannable"
+                                    android:layerType="software"
+                                    android:padding="5dp"
+                                    android:src="@drawable/fltr"
+                                    app:tint="@color/white" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtJourneyDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sf_regular"
+                                    android:text="26 Feb 22"
+                                    android:textColor="@color/white" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/txtJourneyClass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/sf_regular"
+                                    android:text="Economy"
+                                    android:textColor="@color/white" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/iv_search">
+
+            <View
+                android:id="@+id/view_flight"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange_new" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerflightSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                tools:listitem="@layout/search_flight" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/title_alert"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/label_ifsc_confirmation"
+        android:textColor="@color/dark_text"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/textViewAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/dark_aqua_btn"
+        android:paddingBottom="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:text="@string/title_agree"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+</RelativeLayout>

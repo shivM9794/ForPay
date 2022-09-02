@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/captain"
+        android:title="Captain" />
+
+    <item
+        android:id="@+id/batsman"
+        android:title="Batsman" />
+
+    <item
+        android:id="@+id/powerbatsman"
+        android:title="Power Batsman" />
+
+    <item
+        android:id="@+id/bowler"
+        android:title="Bowler" />
+</menu>

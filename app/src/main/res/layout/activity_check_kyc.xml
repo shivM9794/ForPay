@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.kyc.CheckKycActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLay"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:background="@color/green_new"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/title">
+            <ImageView
+                app:tint="@color/white"
+                android:background="@color/green_new"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/back_arrow"
+                android:layerType="software"/>
+
+            <TextView
+                android:id="@+id/titleHeading"
+
+                android:text="@string/kyc_kyc_details"
+                style="@style/titleBarHeading"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:paddingTop="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_9sdp"
+                android:background="@color/green_new"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_above="@+id/btnconfirm"
+            android:id="@+id/scrollView"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/_12sdp"
+            android:id="@+id/mainLinear"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_8sdp"
+            android:id="@+id/btnconfirm"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</layout>

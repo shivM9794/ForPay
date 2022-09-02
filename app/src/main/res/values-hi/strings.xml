@@ -1,0 +1,353 @@
+<resources>
+    <string name="app_name">ForPay</string>
+
+
+    <string name="icon_title_recharge2">रिचार्ज\n</string>
+    <string name="icon_title_bill_payment2">बिल\nपेमेंट</string>
+    <string name="icon_title_electricity_bill_payment2">बिजली बिल\nपेमेंट</string>
+    <string name="icon_title_bus_ticket2">बस \nिकट</string>
+    <string name="icon_title_pan_agent2">पैन\nएजेंट </string>
+
+    <string name="nav_refer_earn">रेफर से कमाएं</string>
+    <string name="nav_add_fund">पैसा ऐड करें</string>
+    <string name="nav_premium_plan">प्रीमियम प्लान </string>
+    <string name="nav_term_of_service">सर्विस का टर्म </string>
+    <string name="nav_change_language">भाषा चुनें</string>
+    <string name="nav_chat_support">बातचीत करें </string>
+    <string name="nav_add_kyc">KYC करें </string>
+
+
+
+
+    <string name="enterAadhaarNumber">Enter Aadhaar Number</string>
+    <string name="enterPanNumber">Enter Pan Number</string>
+    <string name="enterAadhaarotp">Enter Aadhaar Otp</string>
+    <string name="enterDistributorOtp">Enter Distributor Otp</string>
+    <string name="submit">Submit</string>
+    <string name="title_bus_route">Bus Route</string>
+    <string name="bus_boarding_point">Bording Point</string>
+    <string name="bus_dropping_point">Dropping Point</string>
+
+    <string name="kyc_kyc_details">Kyc Details</string>
+
+    <string name="dailyEarning_daily_earning">Daily Earning</string>
+    <string name="fromDate">From Date</string>
+    <string name="toDate">To Date</string>
+    <string name="giftVoucher">Gift Voucher</string>
+    <string name="giftMessage">Gift Message</string>
+    <string name="giftForYou">Gift For you</string>
+    <string name="proceed">Proceed</string>
+    <string name="noShopFound">No Shop Found</string>
+    <string name="availableBalance">Available Balance</string>
+    <string name="addFund">Add Fund</string>
+    <string name="support">Support</string>
+    <string name="inviteAndEarn">Invoice &amp; Earn</string>
+    <string name="currentRefer">Current Refer</string>
+    <string name="shareReferCodeWithFriends">Share the Code with your \nfriends and get more money \nin your wallet</string>
+    <string name="copy">Copy</string>
+    <string name="landline">Landline</string>
+    <string name="search">Search</string>
+    <string name="noDataFound">No Data Found</string>
+    <string name="referId">Refer Id</string>
+    <string name="continue_">Continue</string>
+    <string name="iAcceptPrivacyPolicy">I Accept Privacy Policy  Condition</string>
+    <string name="activeLogin">Active Login</string>
+    <string name="recharge">Recharge</string>
+    <string name="notifications">Notifications</string>
+    <string name="verification_title">Verification..!</string>
+    <string name="otpHasBeenSent">Otp has been sent</string>
+    <string name="EnterOtp">Enter Otp</string>
+    <string name="password">Password</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="changeNumber">Change Number</string>
+    <string name="incentiveBal">Incentive Bal</string>
+    <string name="close">Close</string>
+    <string name="productSuggesion">Product Suggestion</string>
+    <string name="selectHere...">Select here...</string>
+    <string name="recentTransaction">Recent Transaction</string>
+    <string name="doYouHaveShop">क्या आपके पास दुकान है?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="enterReferId">संदर्भ आईडी दर्ज करें</string>
+
+    <string name="title_added_to_fav_contact">पसंदीदा संपर्क में जोड़ दिया गया है </string>
+    <string name="title_removed_from_fav_contact">पसंदीदा संपर्क से हटा दिया गया है </string>
+
+
+    <string name="icon_title_fav_contact">पसंदीदा संपर्क</string>
+
+
+    <string name="icon_title_recharge">रिचार्ज</string>
+    <string name="icon_title_moneytransfer">मनी ट्रांसफर</string>
+    <string name="icon_title_bill_payment">बिल पेमेंट</string>
+    <string name="icon_title_bus_ticket">बस टिकट</string>
+    <string name="icon_title_pan_agent">पैन एजेंट </string>
+    <string name="icon_title_metro_card">मेट्रो कार्ड</string>
+    <string name="icon_title_fashion">फैशन एंड लाइफस्टाइल</string>
+    <string name="icon_title_online_shopping">ऑनलाइन शॉपिंग</string>
+    <string name="icon_title_entertainment">एंटरटेनमेंट</string>
+    <string name="icon_title_hotel">होटल</string>
+    <string name="icon_title_travel">ट्रेवल</string>
+    <string name="icon_title_health_and_beauty">हेल्थ एंड ब्यूटी</string>
+    <string name="icon_title_recharge_history">रिचार्ज हिस्ट्री</string>
+    <string name="icon_title_balance_history">बैलेंस हिस्ट्री</string>
+    <string name="icon_title_bank">बबैंक का विवरण</string>
+    <string name="icon_title_fund_request">फण्ड रिक्वेस्ट</string>
+
+
+    <string name="tab_home">होम</string>
+    <string name="tab_profile">प्रोफ़ाइल</string>
+    <string name="tab_logout">लॉग आउट</string>
+    <string name="tab_history">हिस्ट्री</string>
+
+    <string name="language_select">भाषा का चयन करें</string>
+    <string name="title_digital_gift_voucher">डिजिटल गिफ्ट वाउचर</string>
+    <string name="title_mobile">मोबाइल</string>
+    <string name="title_dth">डीटीएच</string>
+    <string name="title_postpaid">पोस्टपेड</string>
+    <string name="title_metro">मेट्रो</string>
+    <string name="title_select_circle">स्टेट चूज करें</string>
+    <string name="title_select_operator">ऑपरेटर चूज करें</string>
+    <string name="title_dth_number">डीटीएच नंबर</string>
+    <string name="title_amount">अमाउंट</string>
+    <string name="title_mobile_number">मोबाइल नंबर</string>
+    <string name="title_offer_details">ऑफर डिटेल्स</string>
+    <string name="title_recharge_now">रिचार्ज करें</string>
+    <string name="title_fetch_bill">बकाया देखें</string>
+
+    <string name="title_electricty">बिजली</string>
+    <string name="title_gas">गैस</string>
+    <string name="title_water">पानी</string>
+    <string name="title_insurance">इन्सुरेंस</string>
+    <string name="title_landline">लैंडलाइन</string>
+    <string name="title_available_balance">बैलेंस है</string>
+
+
+    <string name="title_nav_home">होम</string>
+    <string name="title_nav_contact_us">कांटेक्ट करें</string>
+    <string name="title_nav_logout">बाहर जाएँ</string>
+    <string name="title_continue">आगे बढे</string>
+    <string name="title_resend_otp">फिर से otp भेजें</string>
+    <string name="title_transactionid">ट्रांसक्शन आईडी </string>
+    <string name="title_status">स्टेटस </string>
+    <string name="title_operator">ऑपरेटर </string>
+    <string name="title_nav_tos">Tos</string>
+    <string name="title_nav_privacy_policy">प्राइवेसी पालिसी</string>
+    <string name="title_order_id">आर्डर आईडी </string>
+    <string name="title_recharge_time">रिचार्ज समय </string>
+    <string name="title_remark">टिप्पणी </string>
+    <string name="title_debit_amount">अमाउंट दिया </string>
+    <string name="title_bank_account">बैंक अकाउंट </string>
+    <string name="title_name">नाम </string>
+    <string name="title_complain">शिकायत</string>
+    <string name="title_details">जानकारी</string>
+    <string name="title_payment_processing">भुगतान किया जा रहा है</string>
+    <string name="title_profit">फायदा</string>
+    <string name="title_youpay">आप पेय करेंगे</string>
+    <string name="title_service_charge">सर्विस चार्ज</string>
+    <string name="title_customer_pay">कस्टमर पेय करेगा</string>
+    <string name="title_confirm_payment">भुगतान करें</string>
+    <string name="title_register">रजिस्टर करें</string>
+    <string name="title_account_name">खाता नाम </string>
+    <string name="title_account_number">खाता संख्या</string>
+    <string name="title_bank_name">बैंक नाम</string>
+    <string name="title_branch_name">शाखा नाम</string>
+    <string name="title_ifsc_code">Ifsc कोड</string>
+    <string name="title_id">आईडी</string>
+    <string name="title_add_beneficiary">ऐड बेनेफिशरी</string>
+    <string name="title_add_now">अभी ऐड करें</string>
+    <string name="title_verify_now">सत्यापित करें</string>
+    <string name="title_select_from_date">फ्रॉम डेट</string>
+    <string name="title_select_to_date">टू डेट</string>
+    <string name="title_mobile_dth_number">मोबाइल/Dth नंबर</string>
+    <string name="title_cancel">रद्द करें</string>
+    <string name="title_search">देखें</string>
+    <string name="title_buy_psa_coupon">Psa कूपन ख़रीदे</string>
+    <string name="title_buynow">अभी खरीदे</string>
+    <string name="title_loading_your_data">डेटा आ रहा है....</string>
+    <string name="title_delete">डिलीट</string>
+    <string name="title_alert">चेतावनी</string>
+    <string name="title_agree">ठीक है</string>
+    <string name="title_send_gift">गिफ्ट भेजें</string>
+    <string name="title_change_password">पासवर्ड चेंज करें</string>
+    <string name="title_changepin">पिन चेंज करें</string>
+    <string name="title_update_profile">अपडेट करें</string>
+    <string name="title_edit_profile">अपडेट करे</string>
+    <string name="title_refer_url">रेफेर URL</string>
+    <string name="title_customer_copy">ग्राहक कॉपी</string>
+    <string name="title_retailer_copy">विक्रेता कॉपी</string>
+    <string name="title_payment">भुगतान</string>
+
+
+
+    <string name="hint_pin">4 डिजिट का पिन डालें</string>
+    <string name="hint_metro_card_number">कृपया मेट्रो कार्ड नंबर डालें</string>
+    <string name="hint_dob">जन्म दिन डाले</string>
+    <string name="hint_landline_number">लैंडलाइन नंबर डालें</string>
+    <string name="hint_stdcode">एसटीडी कोड डालें</string>
+    <string name="hint_amount">अमाउंट डालें</string>
+    <string name="hint_enter_mobile">मोबाइल नंबर डालें</string>
+    <string name="hint_enter_refer">रेफेर आईडी डालें</string>
+    <string name="hint_enter_otp">OTP डालें</string>
+    <string name="hint_pincode">6 डिजिट एरिया पिनकोड डालें</string>
+    <string name="hint_coupon_number">कूपन की संख्या डालें</string>
+    <string name="hint_select_brand">ब्रांड सेलेक्ट करें</string>
+    <string name="hint_sender_name">भेजने वाले का नाम</string>
+    <string name="hint_sender_mobile">भेजने वाले का मोबाइल</string>
+    <string name="hint_receiver_name">पाने वाले का नाम</string>
+    <string name="hint_receiver_mobile">पाने वाले का मोबाइल</string>
+    <string name="hint_receiver_email">पाने वाले का ईमेल</string>
+    <string name="hint_gift_message">गिफ्ट मैसेज</string>
+    <string name="hint_new_password">नया पासवर्ड डालें</string>
+    <string name="hint_repeat_password">दुबारा वही पासवर्ड डालें</string>
+    <string name="hint_new_pin">4 डिजिट नया पिन डालें</string>
+    <string name="hint_repeat_pin">दुबारा वही पिन डालें</string>
+    <string name="hint_full_name">पूरा नाम डालें</string>
+    <string name="hint_email">ईमेल डालें</string>
+    <string name="hint_pan">पैन नंबर डालें</string>
+    <string name="hint_home_landmark">घर का पता डालें</string>
+
+
+    <string name="error_select_operator">कृपया ऑपरेटर चूज करें</string>
+    <string name="error_enter_mobile">कृपया मोबाइल नंबर डालें</string>
+    <string name="error_enter_amount">कृपया अमाउंट नंबर डालें</string>
+    <string name="error_enter_pin">कृपया 4 डिजिट का पिन डालें</string>
+    <string name="error_no_agent_available">अभी कोई एजेंट उपलब्ध नहीं है इसीलिए चाट ऑप्शन में ले जाया जा रहा है</string>
+
+
+    <string name="logout_all">सारे डिवाइस से</string>
+    <string name="logout_this">ससिर्फ इस डिवाइस से</string>
+    <string name="logout_title">लॉगआउट करें</string>
+    <string name="logout_info">हो सकता है आप किसी अन्य डिवाइस से भी लॉगिन किये हो , निचे दिए गए ऑप्शन को चुनें</string>
+    <string name="ratingText">क्या आप हमारे ऐप का आनंद ले रहे हैं? \n कृपया हमें रेटिंग दें \n </string>
+
+    <!-- Login screen -->
+    <string name="continueWithOtp"><u>Continue With Otp</u></string>
+    <string name="continueWithPassword"><u>Continue With Password</u></string>
+    <!-- Login screen -->
+
+
+    <string name="referText">घर बैठे कमाए 30000 रुपये एक महीने में\n
+रिचार्ज करे , भुगतान राशि भरे \n
+रेफेर करें और कमाए ढेर सारे पैसे , \n
+जल्दी डाउनलोड करें FORPAY ऍप \n
+ </string>
+
+
+
+    <string name="title_transaction_confirmation_warning">एक बार ट्रांसक्शन हो गया तो दुबारा वापस नहीं होगा । आगे बढ़ने से पहले दुबारा चेक कर लें</string>
+    <string name="label_commission_transfer_alert">ये प्रोसेस आपका सारा कमीशन बैलेंस मेन बैलेंस में ट्रांसफर करे देगा , आगे बढ़ने के लिए ठीक है में क्लिक करें नहीं तो बाहर कही भी क्लिक करें</string>
+    <string name="label_ifsc_confirmation">आपके अकाउंट से 4 रुपया कटेगा और बेनेफिशरी का नाम पता चल जाएगा.  आगे बढ़ने के लिए ठीक है में क्लिक करें नहीं तो बाहर कही भी क्लिक करें</string>
+    <string name="label_psa_confirmation"> Rs आपके मेन बैलेंस से कटेगा और ये पैसा कभी वापस नहीं होगा । अगर आपको UTI  पोर्टल चलना आता है तो ही आगे बढ़ें । ये चार्ज सर्वर मेंटेनन्स चार्ज है. आगे बढ़ने के लिए ठीक है में क्लिक करें नहीं तो बाहर कही भी क्लिक करें</string>
+
+    <!-- Forgot password screen -->
+    <!-- Forgot password screen -->
+
+    <string name="internet_connect">Please check your internet</string>
+    <string name="server_not_responding">Server not responding , Please check your transaction history</string>
+    <string name="something_went_wrong">Something went wrong try after sometime.</string>
+    <string name="rupee">\u20B9</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="_01_21">01/21</string>
+    <string name="_1700_xxxx_xxxx_1982">1700 xxxx xxxx 1982</string>
+    <string name="_1_500_20">$ 1,500.20</string>
+    <string name="_250">$ 250</string>
+    <string name="_28_apr_2018_sat_10_33_p_m">28 Apr 2018, Sat, 10:33 p.m.</string>
+    <string name="_4029_1213">4029 **** **** 1213</string>
+    <string name="_50">50</string>
+    <string name="_9382332131">9382332131</string>
+    <string name="_981738211">981738211</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="add_wallet_balance">ऐड वॉलेट बैलेंस</string>
+
+    <string name="app_name1">Scan &amp; Pay</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="cc">Credit Card</string>
+    <string name="change_language">Change Language</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="debited_from">Debited from</string>
+    <string name="edit">Edit</string>
+    <string name="enter_your_card_information">Enter Your Card Information</string>
+    <string name="help">Help</string>
+    <string name="j">J</string>
+    <string name="john_doe">John Doe</string>
+    <string name="john_doe_com">john@doe.com</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="mobile_recharged">Mobile recharged</string>
+    <string name="mon_15_feb_balance_36_131_45">Mon 15 Feb Balance $ 36,131.45</string>
+    <string name="my_transactions">My Transactions</string>
+    <string name="need_help_about_this_transaction">Need help about this transaction?</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pay2313114422">Pay2313114422</string>
+    <string name="policies">Policies</string>
+    <string name="recharges_amp_pay_bills">Recharges &amp; Pay Bills</string>
+    <string name="refer_and_earn">Refer and Earn</string>
+    <string name="saved_cards">Saved Cards</string>
+    <string name="scan_pay">Scan Pay2 or any QR</string>
+    <string name="search_menu_title">Search</string>
+    <string name="send_money">Send Money</string>
+    <string name="shop_not_accepting_pay2_refer_shop">Shop not accepting Pay2? Refer Shop</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="successful">Successful</string>
+    <string name="t_amp_c_apply">*T&amp;C Apply</string>
+    <string name="transacted_on">Transacted on</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="wallet">Wallet</string>
+    <string name="wallet_balance">Wallet Balance</string>
+
+
+    <string name="enter_message_hint">Enter Message</string>
+    <string name="txt_chat_support">Chat Support</string>
+    <string name="txt_add_kyc">Add KYC</string>
+    <string name="kyc_note">Just Take Selfie Video Of Your Face and Blink</string>
+    <string name="kyc_apporved">आपका kyc मान्य हो गया है </string>
+    <string name="kyc_pending">आपका kyc पेंडिंग में है , कृपया कुछ समय इंतज़ार करें .</string>
+    <string name="kyc_reject">आपका kyc नकार दिया गया है, कृपया फिर से अपलोड करें </string>
+
+    <string name="kyc_upload_conform_msg">क्या आपको ये वीडियो अपलोड करना है ?</string>
+    <string name="disclaimer_description">Disclaimer: We support most types of recharges,but please check with your operator before you proceed.</string>
+    <string name="aadhaarAddress">Address</string>
+    <string name="completeVideoKyc">Complete Video Kyc</string>
+
+
+</resources>

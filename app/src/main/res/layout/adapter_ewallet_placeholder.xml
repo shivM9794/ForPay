@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/sf_regular"
+            android:hint="Enter consumer Id"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/_14sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_view"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:layout_marginTop="@dimen/_minus1sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:textSize="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+</layout>

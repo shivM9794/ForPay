@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edit_text_rounded"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Hello"
+                    android:textColor="@color/orange_new"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/logout_info"
+                    android:textColor="@color/green_new"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_new" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/logout_title"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <in.forpay.customfonts.MyTextView
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/btnLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/green_new_btn"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/logout_this"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <in.forpay.customfonts.MyTextView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/btnLogoutAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/green_new_btn"
+                        android:backgroundTint="@color/orange_new"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_21sdp"
+                        android:paddingEnd="@dimen/_21sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/logout_all"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

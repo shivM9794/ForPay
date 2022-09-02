@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/_50sdp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        style="@style/tvStyleSemibold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/cancellation_charges" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_cut"
+                        app:srcCompat="@drawable/ic_close"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        app:tint="@color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            style="@style/tvStyleSemibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/time_before_travel"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            style="@style/tvStyleSemibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="@string/cancellation_amount"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_cancellation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    style="@style/tvStyleSemibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingEnd="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/cancellation_policy_heading_small" />
+
+                <View
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:background="@color/gray_new" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_15sdp">
+
+                        <TextView
+                            android:textSize="@dimen/_12sdp"
+                             android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="top"
+                            android:singleLine="false"
+                            android:text="@string/dot_small" />
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            style="@style/tvStyleRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:lineSpacingExtra="2dp"
+                            android:singleLine="false"
+                            android:text="@string/cancellation_policy_1"
+                            android:textColor="@color/hint_color"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="30dp">
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="top"
+                            android:singleLine="false"
+                            android:text="@string/dot_small" />
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            style="@style/tvStyleRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:lineSpacingExtra="2dp"
+                            android:singleLine="false"
+                            android:text="@string/cancellation_policy_2"
+                            android:textColor="@color/hint_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="30dp">
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="top"
+                            android:singleLine="false"
+                            android:text="@string/dot_small" />
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            style="@style/tvStyleRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:lineSpacingExtra="2dp"
+                            android:singleLine="false"
+                            android:text="@string/cancellation_policy_3"
+                            android:textColor="@color/hint_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="30dp">
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="top"
+                            android:singleLine="false"
+                            android:text="@string/dot_small" />
+
+                        <TextView
+                            android:fontFamily="@font/poppins_regular"
+                            style="@style/tvStyleRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:lineSpacingExtra="2dp"
+                            android:singleLine="false"
+                            android:text="@string/cancellation_policy_4"
+                            android:textColor="@color/hint_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_255sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/colorPrimary">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/icon_new"
+                app:civ_border_color="#777777"
+                app:civ_border_width="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/jasmin_pambhar"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:layout_above="@id/userEmail"
+                android:layout_marginBottom="@dimen/_3sdp"/>
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:text="@string/jasminpatel8269497_gmail_com"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+    </RelativeLayout>
+
+</layout>

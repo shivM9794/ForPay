@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.shop.ShopCategoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg_shop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/green_new">
+
+            <ImageView
+                android:id="@+id/backPress"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/back_shop"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_size"
+                android:fontFamily="@font/sf_bold"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/inflateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/continueBtn">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:clipToPadding="false"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                tools:listitem="@layout/adapter_shop_category"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green_new"
+            android:fontFamily="@font/sf_bold"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+</layout>

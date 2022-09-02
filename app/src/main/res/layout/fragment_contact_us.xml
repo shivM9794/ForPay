@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+
+    <variable
+        name="fragment"
+        type="in.forpay.activity.ContactUsActivity" />
+</data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabBackground"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.ContactUsActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/back_arrow"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layerType="software"/>
+
+            <TextView
+               android:layout_centerHorizontal="true"
+                android:paddingBottom="1dp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/green_new"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/green_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:id="@+id/btn_main_email"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:src="@drawable/btn_search_icon"
+            android:id="@+id/btn_search"/>
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_7sdp"/>
+
+        <EditText
+            android:lines="1"
+            android:id="@+id/edt_search"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Search"/>
+
+        <TextView
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/sf_bold"
+            android:background="@drawable/white_less_corner_bg"
+            android:backgroundTint="@color/green_new"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/inflateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/tabBackground"
+            android:id="@+id/contact_recycle"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/layout_contact_us"/>
+
+    </FrameLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textViewNoDataFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No data found"
+        android:visibility="gone"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/light_green"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/_38sdp"/>
+</LinearLayout>
+</layout>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <variable
+            name="ShowBookingDetail"
+            type="in.forpay.fragment.busbookingfragment.ShowBookingDetailsFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bus_background"
+        android:clickable="false"
+        android:orientation="vertical"
+        tools:context=".fragment.busbookingfragment.ShowBookingDetailsFragment"
+        android:id="@+id/llMainBus">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="@string/book_ticket"
+                    android:textColor="@color/green_new"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/back_arrow"
+                    />
+
+                <ImageView
+                    android:id="@+id/sharebtn1"
+                    android:layout_gravity="end"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginEnd="@dimen/_9sdp"
+
+                    app:tint="@color/green_new"
+                    android:src="@drawable/ic_share_black_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/whiterectangle2"
+            android:clickable="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:id="@+id/txtTravelsName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/btn_bus_route"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/btn_bus_route"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/bus_route" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <in.forpay.customfonts.MyTextView
+                        android:id="@+id/txtTravelsType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/txtTravelsContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_9sdp" />
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/track_line_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:id="@+id/txtBoardingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/sf_bold"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtBoardingName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtBoardingTime"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBoardingName"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/boarding_at"
+                        android:textColor="@color/comfort_default"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtBoardingPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv1"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/comfort_default"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtBoardingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtBoardingPoint"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:id="@+id/txtJourneyDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/sf_bold"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="normal" />
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtJourneyDuration"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Hours/Minutes"
+                        android:textColor="@color/comfort_default"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal" />
+
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:id="@+id/txtDroppingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/sf_bold"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtDroppingName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDroppingTime"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDroppingName"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/dropping_at"
+                        android:textColor="@color/comfort_default"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtDroppingPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/comfort_default"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtDroppingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDroppingPoint"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Passenger Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recPassengerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_100sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/adapter_passenger_detail" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linAmountToBePay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/bottm_layout"
+                android:background="@color/cream"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="0dp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Customer Pay"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="You Pay"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtYouPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Commission"
+                        android:textColor="@color/orange_new"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/orange_new"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/solidprimaryrectangle"
+                    android:backgroundTint="@color/orange_new"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Confirm"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/txtCancelTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/solidprimaryrectangle"
+                    android:backgroundTint="@color/orange_new"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Cancel Ticket"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</layout>

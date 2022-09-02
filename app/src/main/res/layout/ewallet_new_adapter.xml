@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/gray_border_balance_bg"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/brand_icon"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/airtel" />
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/un_select_balance"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_toEndOf="@id/brand_icon"/>
+
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_toEndOf="@id/brand_icon"
+                android:src="@drawable/select_balance" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ewallet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/sf_regular"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/brand_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/sf_regular"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

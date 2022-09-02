@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+    <data >
+
+
+        <variable
+            name="AddTravellers"
+            type="in.forpay.fragment.busbookingfragment.AddTravellersFragment" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:clickable="true"
+        tools:context=".fragment.busbookingfragment.AddTravellersFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="0dp"
+            android:layout_height="?actionBarSize">
+
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/txtTotalTravellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recTravellers"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</layout>

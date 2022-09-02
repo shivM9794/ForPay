@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:layerType="software"/>
+
+            <TextView
+                android:id="@+id/web_title"
+                android:paddingBottom="1dp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="wrap_content"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:text="@string/title_nav_tos"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/green_new"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progressBar1"/>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+    </WebView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/sf_bold"
+        android:text="@string/payment_method"
+        android:textColor="@color/green_new"
+        android:textSize="@dimen/_22sdp" />
+
+    <FrameLayout
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@drawable/white_corner_shadow"
+            android:id="@+id/upilay"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:inputType="text"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/sf_regular"
+                android:layout_gravity="center"
+                android:id="@+id/editupi"
+                android:hint="user@upiprovider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:textSize="@dimen/_18sdp" />
+
+            <ImageView
+                android:padding="@dimen/_5sdp"
+                app:tint="@color/white"
+                android:background="@drawable/rectangle_orange"
+                android:backgroundTint="@color/orange_new"
+                android:id="@+id/upigo"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_next" />
+        </LinearLayout>
+
+        <ScrollView
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/mainLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/textViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/send_money"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Beneficiary Id"
+        android:textColor="@color/dark_text"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:id="@+id/textViewBeneficiaryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/editViewAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@null"
+        android:hint="@string/hint_amount"
+        android:inputType="number"
+        android:lines="1"
+        android:textColorHint="@color/hint_text"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:id="@+id/viewLineAmount"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/editViewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@null"
+        android:textColorHint="@color/hint_text"
+        android:hint="@string/hint_pin"
+        android:inputType="numberPassword"
+        android:lines="1"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:id="@+id/viewLinePin"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/editViewOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@null"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:lines="1"
+        android:padding="@dimen/_10sdp"
+        android:textColorHint="@color/hint_text"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewLineOTP"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_new"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewSendFund"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@drawable/aqua_btn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="@string/send_money"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/textViewDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@drawable/dark_aqua_btn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="@string/title_delete"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

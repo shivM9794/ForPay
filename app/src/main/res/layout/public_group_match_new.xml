@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewPublicGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_7sdp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:background="@drawable/search_flight_bg"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/ll_fpl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/txt_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match 20"
+                android:textColor="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txt_team1pgm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/vs"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/vs"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/vs"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/cb_shape_oval"-->
+                <!--                    android:padding="@dimen/_5sdp"-->
+                <!--                    android:text="V/S"-->
+                <!--                    android:textColor="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/txt_team2pgm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--                        <View-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="1dp"-->
+            <!--                            android:background="@color/gray_new"-->
+            <!--                            android:layout_marginTop="10dp"-->
+            <!--                            android:layout_marginStart="5dp"/>-->
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/group_name"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:text="ABC Group"-->
+            <!--                            android:layout_marginTop="15dp"-->
+            <!--                            android:layout_gravity="center_horizontal"-->
+            <!--                            android:textColor="@color/gray"-->
+            <!--                            android:textStyle="bold|italic"/>-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_weight="0.7"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/match_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginStart="5dp"
+                android:textSize="12sp"
+                android:padding="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/group_mode" />
+
+                <TextView
+                    android:id="@+id/match_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_8sdp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/green_new"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_new" />
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="ABC Group"
+                android:textColor="@color/gray"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

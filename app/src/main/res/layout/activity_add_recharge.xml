@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.AddRechargeActivity" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:background="@color/green_new"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layerType="software"
+                        android:src="@drawable/back_arrow"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:text="Select Services"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbar_layout"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@color/white"
+                android:padding="@dimen/_10sdp">
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/sf_regular"
+                    android:hint="@string/search"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/btn_search"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:src="@drawable/btn_search_icon" />
+
+                <TextView
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_less_corner_bg"
+                    android:backgroundTint="@color/green_new"
+                    android:fontFamily="@font/sf_bold"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="0.7dp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@id/searchLayout"
+                android:background="@color/light_gray" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerAddRecharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerAddRecharge">
+
+                <LinearLayout
+                    android:id="@+id/pinLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerViewPlaceHolder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/editMobileUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/sf_regular"
+                        android:hint="Enter consumer Id"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view" />
+
+                    <TextView
+                        android:id="@+id/label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_minus1sdp"
+                        android:text="Label"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <EditText
+                        android:id="@+id/editAmtUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter Amount"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:id="@+id/view_ewallet8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view" />
+
+
+                    <TextView
+                        android:id="@+id/rechargeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/white_less_corner_bg"
+                        android:backgroundTint="@color/green_new"
+                        android:fontFamily="@font/sf_bold"
+                        android:gravity="center"
+                        android:onClick="rechargeBtn"
+                        android:paddingStart="@dimen/_9sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="Add To Fav Contact"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

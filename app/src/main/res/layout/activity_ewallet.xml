@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.balance.EWalletActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@color/green_new">
+
+                <ImageView
+                    android:id="@+id/backPress"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/back_shop"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/bbps_icon"
+                    android:layout_toRightOf="@id/backPress"
+                    android:fontFamily="@font/sf_bold"
+                    android:gravity="center"
+                    android:text="EWallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/toolbar_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/bbps_icon"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_5sdp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@id/toolbar"
+                android:background="@color/light_gray" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPlaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerViewPlaceHolder">
+
+                <LinearLayout
+                    android:id="@+id/pinLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerViewPlaceHolder"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/editMobileUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter Mobile No"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:id="@+id/view_ewallet1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view" />
+
+                    <EditText
+                        android:id="@+id/editNameUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter Name "
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:id="@+id/view_ewallet7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view" />
+
+                    <EditText
+                        android:id="@+id/editAmtUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter Amount "
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:id="@+id/view_ewallet8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view" />
+
+
+                    <EditText
+                        android:id="@+id/editTextOTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter OTP"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/view_ewallet2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view"
+                        android:visibility="gone" />
+
+
+                    <EditText
+                        android:id="@+id/editTextPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter 4 Digit Pin"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:id="@+id/view_ewallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/gray_view" />
+
+                    <TextView
+                        android:id="@+id/rechargeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/white_less_corner_bg"
+                        android:backgroundTint="@color/green_new"
+                        android:fontFamily="@font/sf_bold"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_9sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/recharge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
+

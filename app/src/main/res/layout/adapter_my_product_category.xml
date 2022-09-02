@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_62sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/gift_voucher"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/sf_regular"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:elevation="@dimen/_5sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_below="@id/image"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

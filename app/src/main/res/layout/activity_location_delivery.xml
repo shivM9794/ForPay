@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.shop.LocationDeliveryActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            android:elevation="5dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/green_new">
+
+            <FrameLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/backPress"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:src="@drawable/back_arrow"
+                    android:layout_marginLeft="10dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/trackingId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Shop Location"
+                    android:gravity="center"
+                    android:textSize="@dimen/toolbar_size"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sf_bold"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <fragment
+                android:id="@+id/maps"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

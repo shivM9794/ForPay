@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MakeTeams">
+
+    <LinearLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:background="@color/green_new"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="1dp"
+                android:text="Select Your Team"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Player :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:listitem="@layout/select_player_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Players Category :"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/rg_playerCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radio_btn_bg_size"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bat"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_seat_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Batsmen"
+                android:textSize="11sp"
+                android:textColor="@drawable/radio_grp_txt"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/bowl"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_seat_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Bowler"
+                android:textSize="11sp"
+                android:textColor="@drawable/radio_grp_txt"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/power_bat"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_seat_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Power Batsmen"
+                android:textSize="11sp"
+                android:textColor="@drawable/radio_grp_txt"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/power_bowl"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_seat_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Power Bowler"
+                android:textSize="11sp"
+                android:textColor="@drawable/radio_grp_txt"
+                android:textStyle="bold"/>
+
+
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/btnSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/green_new_btn"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</layout>

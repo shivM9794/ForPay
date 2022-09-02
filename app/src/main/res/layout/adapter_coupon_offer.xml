@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/coupon_bg">
+
+        <RelativeLayout
+            android:id="@+id/priceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="@dimen/_19sdp"
+                android:layout_height="@dimen/_19sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/green_less_thick_border"/>
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/select"
+                app:tint="@color/green_new"
+                android:layout_centerInParent="true"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="No Coupon Available"
+            android:layout_toStartOf="@+id/coupon"
+            android:layout_below="@id/priceLayout"
+            android:layout_marginTop="@dimen/_minus4sdp"
+            android:layout_marginEnd="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:text="ABCDER"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_below="@id/title"/>
+        <TextView
+            android:id="@+id/coupon_expire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_10sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_below="@id/title"/>
+
+            <!--android:background="@drawable/white_dash_border_bg"-->
+
+
+    </RelativeLayout>
+
+</layout>

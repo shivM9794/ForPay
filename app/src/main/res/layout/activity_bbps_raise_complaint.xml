@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.activity.bbps.RaiseComplaint" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".activity.bbps.RaiseComplaint">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btnconfirm"
+            android:id="@+id/fund_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:orientation="horizontal"
+                android:background="@color/green_new">
+
+                <ImageView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/back_arrow"
+                    android:layout_centerVertical="true"
+                    android:layerType="software"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:paddingBottom="1dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raise Complaint"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_history"
+                    android:layout_width="@dimen/_63sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    app:srcCompat="@drawable/bbps"
+
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/mainLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:paddingTop="@dimen/_5sdp"-->
+<!--                        android:paddingBottom="@dimen/_5sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        &lt;!&ndash;<ImageView-->
+<!--                            android:padding="@dimen/_1sdp"-->
+<!--                            android:layout_width="@dimen/_21sdp"-->
+<!--                            android:layout_height="@dimen/_21sdp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            app:srcCompat="@drawable/ic_ruppies2"-->
+<!--                            />&ndash;&gt;-->
+
+<!--                        <EditText-->
+<!--                            android:background="@color/white"-->
+<!--                            android:fontFamily="@font/poppins_regular"-->
+<!--                            android:id="@+id/editTextTransactionId"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="numberDecimal"-->
+<!--                            style="@style/etStyleRegular"-->
+<!--                            android:padding="@dimen/_10sdp"-->
+<!--                            android:textColor="@color/dark_text"-->
+<!--                            android:lines="1"-->
+<!--                            android:hint="Enter Transaction Id"-->
+<!--                            android:text="AX011027000001969790"-->
+<!--                            android:textColorHint="@color/hint_color"-->
+<!--                            />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                    <View-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.3dp"-->
+<!--                        android:background="@color/gray_new" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:paddingTop="@dimen/_5sdp"-->
+<!--                        android:paddingBottom="@dimen/_5sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        &lt;!&ndash;<ImageView-->
+<!--                            android:padding="@dimen/_3sdp"-->
+<!--                            android:layout_width="@dimen/_25sdp"-->
+<!--                            android:layout_height="@dimen/_25sdp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            app:srcCompat="@drawable/ic_user2"-->
+<!--                            />&ndash;&gt;-->
+
+<!--                        <EditText-->
+<!--                            android:background="@color/white"-->
+<!--                            android:fontFamily="@font/poppins_regular"-->
+<!--                            android:id="@+id/editTextTxnDate"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="text"-->
+<!--                            style="@style/etStyleRegular"-->
+<!--                            android:padding="@dimen/_10sdp"-->
+<!--                            android:textColor="@color/dark_text"-->
+<!--                            android:lines="1"-->
+<!--                            android:hint="Transaction Date"-->
+<!--                            android:text="2021-01-27"-->
+<!--                            android:textColorHint="@color/hint_color"-->
+<!--                            />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+
+<!--                    <View-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.3dp"-->
+<!--                        android:background="@color/gray_new" />-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:paddingTop="@dimen/_5sdp"-->
+<!--                        android:paddingBottom="@dimen/_5sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        &lt;!&ndash;<ImageView-->
+<!--                            android:padding="@dimen/_3sdp"-->
+<!--                            android:layout_width="@dimen/_25sdp"-->
+<!--                            android:layout_height="@dimen/_25sdp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            app:srcCompat="@drawable/ic_user2"-->
+<!--                            />&ndash;&gt;-->
+
+<!--                        <EditText-->
+<!--                            android:background="@color/white"-->
+<!--                            android:fontFamily="@font/poppins_regular"-->
+<!--                            android:id="@+id/editTextTxnIssue"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="text"-->
+<!--                            style="@style/etStyleRegular"-->
+<!--                            android:padding="@dimen/_10sdp"-->
+<!--                            android:textColor="@color/dark_text"-->
+<!--                            android:lines="1"-->
+<!--                            android:hint="Description"-->
+<!--                            android:text="Bill not showing in portal"-->
+<!--                            android:textColorHint="@color/hint_color"-->
+<!--                            />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+
+<!--                    <View-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.3dp"-->
+<!--                        android:background="@color/gray_new" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/btn_choose_issue"-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:paddingTop="@dimen/_5sdp"-->
+<!--                        android:paddingBottom="@dimen/_5sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        &lt;!&ndash;<ImageView-->
+<!--                            android:padding="@dimen/_3sdp"-->
+<!--                            android:layout_width="@dimen/_25sdp"-->
+<!--                            android:layout_height="@dimen/_25sdp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            app:srcCompat="@drawable/ifsc_ico"-->
+<!--                            />&ndash;&gt;-->
+
+<!--                        <TextView-->
+<!--                            android:background="@color/white"-->
+<!--                            android:fontFamily="@font/poppins_regular"-->
+<!--                            android:id="@+id/selectViewIssue"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="8"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Transaction Successful, account not updated"-->
+<!--                            style="@style/etStyleRegular"-->
+<!--                            android:padding="@dimen/_10sdp"-->
+<!--                            android:textColor="@color/dark_text"-->
+<!--                            android:textColorHint="@color/recharge_hint"-->
+<!--                            />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            app:srcCompat="@drawable/ic_arrow_down"-->
+<!--                            app:tint="@color/green_new" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+
+<!--                    <View-->
+<!--                        android:layout_marginStart="@dimen/_10sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.3dp"-->
+<!--                        android:background="@color/gray_new" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/btn_request_now"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginStart="@dimen/_20sdp"-->
+<!--                        android:layout_marginTop="@dimen/_15sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_20sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_15sdp"-->
+<!--                        android:background="@drawable/green_new_btn"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingTop="15dp"-->
+<!--                        android:paddingBottom="15dp"-->
+<!--                        android:text="MAKE COMPLAINT"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_8sdp"
+            android:id="@+id/btnconfirm"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>

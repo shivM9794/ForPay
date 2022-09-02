@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.SensitiveInfoActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="Sensitive Information"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_150sdp"-->
+<!--                android:layout_height="@dimen/_60sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/forpay" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_corner_bg"
+                    android:padding="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_150sdp"-->
+<!--                        android:layout_height="@dimen/_60sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/forpay" />-->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/sensitiveRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Why we need permission ?"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:fontFamily="@font/sf_bold"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_15sdp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="@dimen/_8sdp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:text="Allow this permission will help us improve your app experience."-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="To maintain security for the system and users, Android require apps to request before the app can use certain system data and features. Depending on how sensitive the area is, the system may grant the permission automatically, or it may ask the user to approve the request."-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"/>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/ok"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/green_new_btn"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="Accept"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/otpLoginButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/red_new_btn"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="Ignore"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_sensitive1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/appbar_layout">-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/sensitiveInfoRecycler"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="10dp" />-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/btn_acceptIgnore"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/accept"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_20sdp"-->
+<!--                    android:background="@drawable/green_new_btn"-->
+<!--                    android:fontFamily="@font/poppins_bold"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:paddingTop="@dimen/_10sdp"-->
+<!--                    android:paddingBottom="@dimen/_10sdp"-->
+<!--                    android:text="Accept"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:textStyle="normal" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/otpLoginButton"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_20sdp"-->
+<!--                    android:background="@drawable/red_new_btn"-->
+<!--                    android:fontFamily="@font/poppins_bold"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:paddingTop="@dimen/_10sdp"-->
+<!--                    android:paddingBottom="@dimen/_10sdp"-->
+<!--                    android:text="Ignore"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:textStyle="normal" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/continueBtn"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                android:layout_marginBottom="@dimen/_20sdp"-->
+<!--                android:background="@drawable/green_new_btn"-->
+<!--                android:fontFamily="@font/poppins_bold"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:paddingTop="@dimen/_10sdp"-->
+<!--                android:paddingBottom="@dimen/_10sdp"-->
+<!--                android:text="@string/continue_"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:textStyle="normal" />-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

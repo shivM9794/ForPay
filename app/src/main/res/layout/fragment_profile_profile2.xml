@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.fragment.ProfileProfileFragment" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/balance_bg">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                tools:context=".fragment.ProfileProfileFragment">
+
+
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/whiteBg"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_30sdp"
+                        android:visibility="visible">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layerType="software"
+                            android:bufferType="spannable"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/profile_placeholder"
+                            android:id="@+id/profile_img"/>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip">
+                            <EditText
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/editTextName"
+                                style="@style/etStyleRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_full_name"
+                                android:textColorHint="@color/hint_text"
+                                android:textColor="@color/dark_text"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip">
+                            <EditText
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/editTextMobile"
+                                style="@style/etStyleRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/hint_enter_mobile"
+                                android:textColorHint="@color/hint_text"
+                                android:inputType="none"
+                                android:lines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip">
+                            <EditText
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:id="@+id/editTextEmail"
+                                style="@style/etStyleRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_email"
+                                android:textColorHint="@color/hint_text"
+                                android:inputType="textEmailAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/submitTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/green_new_btn"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="@string/title_update_profile"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

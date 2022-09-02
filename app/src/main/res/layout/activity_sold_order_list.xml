@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.shop.SoldOrderListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/gray_bg_shop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/green_new">
+
+            <ImageView
+                android:id="@+id/backPress"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/back_shop"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold Order List"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_size"
+                android:fontFamily="@font/sf_bold"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/white_corner_shadow"
+            android:padding="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/search_gray"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_7sdp"/>
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Select here..."
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_shop"
+                android:fontFamily="@font/sf_regular"
+                android:textSize="@dimen/_14sdp"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:layout_gravity="center"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/inflateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:listitem="@layout/adapter_sold_order_list"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

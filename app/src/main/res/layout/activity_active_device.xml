@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.ActiveDeviceActivity" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activity.ActiveDeviceActivity">
+
+        <LinearLayout
+            android:id="@+id/layout_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:src="@drawable/round_app_ico" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="For"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/_25sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Pay"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_25sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activateDeviceLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_logo"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/unlock"
+                app:tint="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/aqua_btn"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:onClick="@{()->activity.onClickActiveDevice()}"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="ACTIVE DEVICE"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activateDeviceLL"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/verifySms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Hello Test"
+                android:textIsSelectable="true" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/txtSendTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_arrow_downward"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Send To"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/sendSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/primary_btn"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="Send Sms"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

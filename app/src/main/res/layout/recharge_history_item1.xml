@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/cardView">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_transactionid"
+            android:id="@+id/transactionId"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center"
+            android:background="@drawable/primary_half_roundtop"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/white_bottom_corner_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/orderId"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Order No 922112233"
+                        android:textColor="@color/orange_new"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+                   <!-- <TextView
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/commissiontv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:textColor="@color/green_new"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_11sdp" />-->
+
+                    <in.forpay.customfonts.MyTextViewBold
+                        android:fontFamily="@font/poppins_bold"
+                        android:id="@+id/orderPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_15sdp"/>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_new"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/operatorIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_phone" />
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/operatorIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="@font/poppins_bold"
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9029526913"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:maxLines="3"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:orientation="horizontal">
+
+                        <in.forpay.customfonts.MyTextView
+                            android:fontFamily="@font/poppins_regular"
+                            android:id="@+id/operator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Airtel"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_11sdp"
+                            android:maxLines="3"
+                            android:layout_toStartOf="@id/orderStatus"
+                            />
+
+                        <in.forpay.customfonts.MyTextViewBold
+                            android:fontFamily="@font/poppins_regular"
+                            android:id="@+id/orderStatus"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:text="successful"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="-4dp"
+                            android:gravity="end|top"/>
+
+
+                    </RelativeLayout>
+
+
+                    <in.forpay.customfonts.MyTextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/textViewDatetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06:41 PM 8 Sep 2019"
+                        android:textColor="@color/textSub"
+                        android:layout_marginTop="-2dp"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_debit_amount"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        android:id="@+id/amountLabel"/>
+
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/textViewAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewCustomerCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/aqua_btn"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/title_customer_copy"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_9sdp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/textViewRetailerCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:background="@drawable/dark_aqua_btn"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/title_retailer_copy"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_9sdp"
+                    android:visibility="gone"/>
+
+
+                <in.forpay.customfonts.MyTextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/textViewRefund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/white_less_corner_bg"
+                    android:backgroundTint="@color/orange_new"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/title_complain"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

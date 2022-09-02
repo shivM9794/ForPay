@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="in.forpay.activity.FundRequestActivity" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tabBackground"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".fragment.FundRequestFragment">
+
+        <LinearLayout
+            android:id="@+id/fund_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:orientation="horizontal"
+                android:background="@color/green_new">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:id="@+id/back_btn"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@drawable/back_arrow"
+                        android:layout_centerVertical="true"
+                        android:layerType="software"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:paddingBottom="1dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fund Request"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        />
+
+                    <ImageView
+                        android:id="@+id/btn_history"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        app:srcCompat="@drawable/ic_history"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:tint="@color/white" />
+
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView
+                            android:padding="@dimen/_1sdp"
+                            android:layout_width="@dimen/_21sdp"
+                            android:layout_height="@dimen/_21sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_ruppies2"
+                            />-->
+
+                        <EditText
+                            android:background="@color/white"
+                            android:fontFamily="@font/poppins_regular"
+                            android:id="@+id/editTextAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            style="@style/etStyleRegular"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/dark_text"
+                            android:lines="1"
+                            android:hint="@string/hint_amount"
+                            android:textColorHint="@color/hint_color"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray_new" />
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView
+                            android:padding="@dimen/_3sdp"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_user2"
+                            />-->
+
+                        <EditText
+                            android:background="@color/white"
+                            android:fontFamily="@font/poppins_regular"
+                            android:id="@+id/editTextReferenceNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            style="@style/etStyleRegular"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/dark_text"
+                            android:lines="1"
+                            android:hint="Reference Number"
+                            android:textColorHint="@color/hint_color"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray_new" />
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_choose_bank"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView
+                            android:padding="@dimen/_3sdp"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ifsc_ico"
+                            />-->
+
+                        <TextView
+                            android:background="@color/white"
+                            android:fontFamily="@font/poppins_regular"
+                            android:id="@+id/textViewBank"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:layout_height="wrap_content"
+                            android:text="Choose Bank"
+                            style="@style/etStyleRegular"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/dark_text"
+                            android:textColorHint="@color/recharge_hint"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/ic_arrow_down"
+                            app:tint="@color/green_new" />
+
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray_new" />
+
+                    <TextView
+                        android:id="@+id/btn_request_now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/green_new_btn"
+                        android:gravity="center"
+                         android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="REQUEST NOW"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

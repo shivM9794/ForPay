@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="in.forpay.activity.OffersActivity" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".activity.OffersActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_centerVertical="true"
+                        android:layerType="software"
+                        android:src="@drawable/back_arrow" />
+
+                    <TextView
+                        android:id="@+id/offer_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="1dp"
+                        android:text=""
+                        android:textColor="@color/green_new"
+                        android:textSize="@dimen/_15sdp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->activity.onClickCircle()}"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/location_ico" />
+
+                <TextView
+                    android:id="@+id/textViewCircle"
+                    style="@style/etStyleRegular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/title_select_circle"
+                    android:padding="@dimen/_10sdp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_arrow_down"
+                    app:tint="@color/green_light" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_light" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:background="@color/green_new"
+                app:tabIndicatorGravity="bottom"
+                app:tabIndicatorHeight="@dimen/_1sdp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/white" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tabBackground" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wesupport"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

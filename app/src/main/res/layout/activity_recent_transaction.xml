@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.RecentTransactionActivity">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/back_arrow"
+                    android:layerType="software"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_toEndOf="@id/back_btn"
+                    android:paddingBottom="1dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recentTransaction"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:background="@drawable/gray_border2"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:id="@+id/recent_recycle"/>
+
+        <TextView
+            android:paddingBottom="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="gone"
+            android:id="@+id/no_recent_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/noDataFound"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif"
+            android:padding="@dimen/_15sdp"/>
+
+    </LinearLayout>
+</layout>

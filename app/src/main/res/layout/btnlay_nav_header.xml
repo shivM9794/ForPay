@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayoutReffer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_2sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:tint="@color/green"
+        android:id="@+id/icon_nav_item"
+        android:layout_width="@dimen/_23sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:bufferType="spannable"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/title_nav_item"
+        style="@style/etStyleRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/nav_refer_earn"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/new_service_nav"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"/>
+</LinearLayout>

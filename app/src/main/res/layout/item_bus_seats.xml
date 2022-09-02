@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="2dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/tv_seats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:maxEms="2"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/tv_price"
+        android:layout_below="@+id/iv_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="visible" />
+</RelativeLayout>
+
+

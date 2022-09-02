@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "863499903759",
+    "firebase_url": "https://forpay.firebaseio.com",
+    "project_id": "forpay",
+    "storage_bucket": "forpay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863499903759:android:d23ed0742d763d85fc147a",
+        "android_client_info": {
+          "package_name": "in.forpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863499903759-j3u6qf4t4h1q2n41fmoif353rtfl4k22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnxlyDp5hhFiJLXlMzhK_RUvVIc7VpsvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863499903759-j3u6qf4t4h1q2n41fmoif353rtfl4k22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

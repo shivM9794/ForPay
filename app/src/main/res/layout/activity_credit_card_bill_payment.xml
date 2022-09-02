@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".activity.balance.CreditCardBill">
+
+        <LinearLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@color/green_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layerType="software"
+                    android:src="@drawable/back_arrow"
+                    app:tint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="1dp"
+                    android:text="Pay Credit Card Bills"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/details_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCreditCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawableStart="@drawable/ic_credit_card"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Enter Credit Card Number :"
+                    android:textSize="14sp"
+                    android:maxLength="20"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawableStart="@drawable/ic_currency_rupee"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Enter Amount :"
+                    android:maxLength="10"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawableStart="@drawable/ic_otp"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Enter OTP :"
+                    android:maxLength="10"
+                    android:textSize="14sp"
+                    android:inputType="number|text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:drawableStart="@drawable/ic_number"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Enter 4 Digit Pin :"
+                    android:maxLength="4"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/submitTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/green_new_btn"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+    </LinearLayout>
+
+</layout>

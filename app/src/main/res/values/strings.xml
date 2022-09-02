@@ -1,0 +1,518 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ForPay</string>
+
+    <string name="icon_title_recharge2">Recharge\n</string>
+    <string name="icon_title_bill_payment2">Bill\nPayment</string>
+    <string name="icon_title_electricity_bill_payment2" translatable="false">Electricity Bill\nPayment</string>
+    <string name="icon_title_bus_ticket2">Bus\nBooking</string>
+    <string name="icon_title_pan_agent2">Pan\nAgent</string>
+    <string name="nav_refer_earn" translatable="false">Refer And Earn</string>
+    <string name="nav_add_fund" translatable="false">Add Fund</string>
+    <string name="nav_premium_plan" translatable="false">Premium Plan</string>
+    <string name="nav_term_of_service" translatable="false">Term Of Service</string>
+    <string name="nav_change_language" translatable="false">Change Language</string>
+    <string name="nav_chat_support" translatable="false">Chat Support</string>
+    <string name="nav_add_kyc" translatable="false">Add KYC</string>
+
+
+    <string name="title_added_to_fav_contact" tools:ignore="MissingTranslation">Added to favourite contact</string>
+    <string name="title_removed_from_fav_contact" tools:ignore="MissingTranslation">Removed from favourite contact</string>
+    <string name="icon_title_fav_contact" tools:ignore="MissingTranslation">Favourite Contact</string>
+
+    <string name="enterAadhaarNumber" tools:ignore="MissingTranslation">Enter Aadhaar Number</string>
+    <string name="enterPanNumber" tools:ignore="MissingTranslation">Enter Pan Number</string>
+    <string name="enterAadhaarotp" tools:ignore="MissingTranslation">Enter Aadhaar Otp</string>
+    <string name="enterDistributorOtp" tools:ignore="MissingTranslation">Enter Distributor Otp</string>
+    <string name="submit" tools:ignore="MissingTranslation">Submit</string>
+    <string name="title_bus_route" tools:ignore="MissingTranslation">Bus Route</string>
+    <string name="bus_boarding_point" tools:ignore="MissingTranslation">Bording Point</string>
+    <string name="bus_dropping_point" tools:ignore="MissingTranslation">Dropping Point</string>
+
+    <string name="kyc_kyc_details" tools:ignore="MissingTranslation">Kyc Details</string>
+
+    <string name="dailyEarning_daily_earning" tools:ignore="MissingTranslation">Daily Earning</string>
+    <string name="fromDate" tools:ignore="MissingTranslation">From Date</string>
+    <string name="toDate" tools:ignore="MissingTranslation">To Date</string>
+    <string name="giftVoucher" tools:ignore="MissingTranslation">Gift Voucher</string>
+    <string name="giftMessage" tools:ignore="MissingTranslation">Gift Message</string>
+    <string name="giftForYou" tools:ignore="MissingTranslation">Gift For you</string>
+    <string name="proceed" translatable="false">Proceed</string>
+    <string name="noShopFound" tools:ignore="MissingTranslation">No Shop Found</string>
+    <string name="availableBalance" tools:ignore="MissingTranslation">Available Balance</string>
+    <string name="addFund" tools:ignore="MissingTranslation">Add Fund</string>
+    <string name="support" tools:ignore="MissingTranslation">Support</string>
+    <string name="inviteAndEarn" tools:ignore="MissingTranslation">Refer &amp; Earn</string>
+    <string name="currentRefer" tools:ignore="MissingTranslation">Current Refer</string>
+    <string name="shareReferCodeWithFriends" tools:ignore="MissingTranslation">Share the Code with your \nfriends and get more money \nin your wallet</string>
+    <string name="copy" tools:ignore="MissingTranslation">Copy</string>
+    <string name="landline" tools:ignore="MissingTranslation">Landline</string>
+    <string name="search" translatable="false">Search</string>
+    <string name="noDataFound" tools:ignore="MissingTranslation">No Data Found</string>
+    <string name="referId" tools:ignore="MissingTranslation">Refer Id</string>
+    <string name="continue_" tools:ignore="MissingTranslation">Continue</string>
+    <string name="iAcceptPrivacyPolicy" tools:ignore="MissingTranslation">I Accept Privacy Policy  Condition</string>
+    <string name="iAcceptTosOfCoupon" tools:ignore="MissingTranslation">I Accept TOS Of Cashback Coupon</string>
+    <string name="activeLogin" tools:ignore="MissingTranslation">Active Login</string>
+    <string name="recharge">Recharge</string>
+    <string name="notifications">Notifications</string>
+    <string name="verification_title">Verification..!</string>
+    <string name="otpHasBeenSent">Otp has been sent</string>
+    <string name="EnterOtp">Enter Otp</string>
+    <string name="password">Password</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="changeNumber">Change Number</string>
+    <string name="incentiveBal">Incentive Bal</string>
+    <string name="close">Close</string>
+    <string name="productSuggesion">Product Suggestion</string>
+    <string name="selectHere...">Select here...</string>
+    <string name="recentTransaction">Recent Transaction</string>
+    <string name="doYouHaveShop">Do You Have Shop ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enterReferId">Enter Refer Id</string>
+    <string name="distributorName">Distributor Name</string>
+    <string name="DistributorNameWillDisplayHere">Distributor Name Will Display Here</string>
+    <string name="DistributorDistanceWillDisplayHere">Distributor Distance Will Display Here</string>
+    <string name="distributorDistnce">Distributor Distance</string>
+    <string name="checkName">Check Name</string>
+
+
+    <string name="icon_title_recharge">Recharge</string>
+    <string name="icon_title_moneytransfer">Money Transfer</string>
+    <string name="icon_title_bill_payment">Bill Payment</string>
+    <string name="icon_title_bus_ticket">Bus Ticket</string>
+    <string name="icon_title_pan_agent">Pan Agent</string>
+    <string name="icon_title_metro_card">Metro Card</string>
+    <string name="icon_title_fashion">Fashion and Life Style</string>
+    <string name="icon_title_online_shopping">Online Shopping</string>
+    <string name="icon_title_entertainment">Entertainment</string>
+    <string name="icon_title_hotel">Hotel</string>
+    <string name="icon_title_travel">Travel</string>
+    <string name="icon_title_health_and_beauty">Health And Beauty</string>
+    <string name="icon_title_recharge_history">Recharge History</string>
+    <string name="icon_title_balance_history">Balance History</string>
+    <string name="icon_title_bank">Details of Bank</string>
+    <string name="icon_title_fund_request">Fund Request</string>
+    <string name="icon_title_login_history">Login History</string>
+
+
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_logout">Logout</string>
+    <string name="tab_history">History</string>
+
+
+    <string name="language_select">Select Language</string>
+    <string name="title_digital_gift_voucher">Digital Gift Voucher</string>
+    <string name="title_mobile">MOBILE</string>
+    <string name="title_dth">DTH</string>
+    <string name="title_postpaid">POSTPAID</string>
+    <string name="title_metro">METRO</string>
+    <string name="title_select_circle">Select Circle</string>
+    <string name="title_select_operator">Select Operator</string>
+    <string name="title_dth_number">Dth Number</string>
+    <string name="title_amount">Amount</string>
+    <string name="title_enter_amount">Enter Amount</string>
+    <string name="title_offer_details">Offer Details</string>
+    <string name="title_recharge_now">Recharge Now</string>
+    <string name="title_proceed">Proceed</string>
+    <string name="title_fetch_bill">Fetch Bill</string>
+    <string name="title_electricty">Electricity</string>
+    <string name="title_gas">Gas</string>
+    <string name="title_water">Water</string>
+    <string name="title_insurance">Insurance</string>
+    <string name="title_landline">Landline</string>
+    <string name="title_available_balance">Available Balance</string>
+    <string name="title_nav_home">Home</string>
+    <string name="title_nav_contact_us">Contact Us</string>
+    <string name="title_nav_logout">Logout</string>
+    <string name="title_nav_tos">Term Of Service</string>
+    <string name="title_nav_privacy_policy">Privacy Policy</string>
+    <string name="title_continue">Continue</string>
+    <string name="title_resend_otp">Resend Otp</string>
+    <string name="title_get_otp_via_call">Get Otp Via Call</string>
+    <string name="title_transactionid">Transaction Id </string>
+    <string name="title_status">Status </string>
+    <string name="title_operator">Operator </string>
+    <string name="title_mobile_number">Mobile Number </string>
+    <string name="title_order_id">Order id </string>
+    <string name="title_recharge_time">Recharge Time </string>
+    <string name="title_remark">Remark </string>
+    <string name="title_debit_amount">Debit Amount </string>
+    <string name="title_bank_account">Bank Account </string>
+    <string name="title_name">Name </string>
+    <string name="title_complain">Complain</string>
+    <string name="title_details">Details</string>
+    <string name="title_payment_processing">Payment Processing</string>
+    <string name="title_profit">Profit</string>
+    <string name="title_youpay">You Pay</string>
+    <string name="title_service_charge">Service Charge</string>
+    <string name="title_customer_pay">Customer Pay</string>
+    <string name="title_confirm_payment">Confirm Payment</string>
+    <string name="title_register">Register</string>
+    <string name="title_account_name">Account Name </string>
+    <string name="title_account_number">Account Number</string>
+    <string name="title_bank_name">Bank Name</string>
+    <string name="title_branch_name">Branch Name</string>
+    <string name="title_ifsc_code">Ifsc Code</string>
+    <string name="title_id">Id</string>
+    <string name="title_add_beneficiary">Add Beneficiary</string>
+    <string name="title_add_now">Add Now</string>
+    <string name="title_verify_now">Verify Now</string>
+    <string name="title_select_from_date">From Date</string>
+    <string name="title_select_to_date">To Date</string>
+    <string name="title_mobile_dth_number">Mobile/Dth Number</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_search">Search</string>
+    <string name="title_buy_psa_coupon">Buy Psa Coupon</string>
+    <string name="title_buynow">Buy Now</string>
+    <string name="title_loading_your_data">Loading your data....</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_alert">Alert</string>
+    <string name="title_agree">Agree</string>
+    <string name="title_send_gift">Send Gift</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_changepin">Change Pin</string>
+    <string name="title_update_profile">Update Profile</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_refer_url">REFER URL</string>
+    <string name="title_share_code" translatable="false">SHARE YOUR CODE</string>
+    <string name="title_customer_copy">Customer Copy</string>
+    <string name="title_retailer_copy">Retailer Copy</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_change_language" translatable="false">Change Language</string>
+    <string name="title_otp" translatable="false">Enter Otp</string>
+
+    <string name="hint_pin">Enter 4 digit pin</string>
+    <string name="hint_metro_card_number">Enter Metro Card Number</string>
+    <string name="hint_dob">Enter Date Of Birth</string>
+    <string name="hint_landline_number">Enter Landline Number</string>
+    <string name="hint_stdcode">Enter Std code</string>
+    <string name="hint_amount">Enter amount</string>
+    <string name="hint_enter_mobile">Enter Mobile Number</string>
+    <string name="hint_enter_refer">Enter Refer id</string>
+    <string name="hint_enter_otp">Enter OTP</string>
+    <string name="hint_pincode">Enter 6 digit Pin code</string>
+    <string name="hint_coupon_number">Enter Number Of Coupons</string>
+    <string name="hint_select_brand">Select Brand</string>
+    <string name="hint_sender_name">Sender Name</string>
+    <string name="hint_sender_mobile">Sender Mobile</string>
+    <string name="hint_receiver_name">Receiver Name</string>
+    <string name="hint_receiver_mobile">Receiver Mobile</string>
+    <string name="hint_receiver_email">Receiver Email</string>
+    <string name="hint_gift_message">Gift Message</string>
+    <string name="hint_new_password">Enter New Password</string>
+    <string name="hint_repeat_password">Repeat Same Password</string>
+    <string name="hint_new_pin">Enter 4 digit new pin</string>
+    <string name="hint_repeat_pin">Repeat same pin</string>
+    <string name="hint_full_name">Enter Full Name</string>
+    <string name="hint_email">Enter Email Id</string>
+    <string name="hint_pan">Enter Pan Number</string>
+    <string name="hint_home_landmark">Home Landmark</string>
+
+
+    <string name="error_select_operator">Please Select Operator First</string>
+    <string name="error_enter_mobile">Please enter mobile number</string>
+    <string name="error_enter_amount">Please enter amount</string>
+    <string name="error_enter_pin">Please enter 4 digit pin</string>
+    <string name="error_enter_otp" translatable="false">Please enter otp</string>
+    <string name="error_no_agent_available" translatable="false">No Agent Is Online , Redirecting you to chat</string>
+
+    <string name="logout_all" translatable="false">All Device</string>
+    <string name="logout_this" translatable="false">This Device Only</string>
+    <string name="logout_title" translatable="false">Logout From</string>
+    <string name="logout_info" translatable="false">There may be multiple login with other device too . Please choose following logout option</string>
+    <string name="title_transaction_confirmation_warning">Transaction once done can not be reversed . Please verify before doing transaction</string>
+    <string name="label_commission_transfer_alert">This process will transfer all your commission balance to main balance .Click on Agree to continue else click outside this box.</string>
+    <string name="label_ifsc_confirmation">4 Rs will be charged from your account. Click on Agree to continue else click outside this box.</string>
+    <string name="label_psa_confirmation"> Rs non refundable will be charged from your new psa account as one time server maintenance charge.  Click on Agree to continue else click outside this box.</string>
+    <string name="ratingText" translatable="false">Are you enjoying our app? \n Please give us a review \n</string>
+
+    <string name="referText" translatable="false">Earn upto 30000 rs per month.\n
+        Do recharge , Pay bill , Refer to friend \n
+        and earn alot of money , Just Download FORPAY app \n</string>
+
+    <!-- Login screen -->
+    <string name="continueWithOtp"><u>Continue With Otp</u></string>
+    <string name="continueWithPassword"><u>Continue With Password</u></string>
+    <!-- Login screen -->
+
+    <!-- Forgot password screen -->
+    <!-- Forgot password screen -->
+
+    <string name="internet_connect">Please check your internet</string>
+    <string name="server_not_responding">Server not responding , Please check your transaction history</string>
+    <string name="something_went_wrong">Something went wrong try after sometime.</string>
+    <string name="rupee">\u20B9</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="_01_21">01/21</string>
+    <string name="_1700_xxxx_xxxx_1982">1700 xxxx xxxx 1982</string>
+    <string name="_1_500_20">$ 1,500.20</string>
+    <string name="_250">$ 250</string>
+    <string name="_28_apr_2018_sat_10_33_p_m">28 Apr 2018, Sat, 10:33 p.m.</string>
+    <string name="_4029_1213">4029 **** **** 1213</string>
+    <string name="_50">50</string>
+    <string name="_9382332131">9382332131</string>
+    <string name="_981738211">981738211</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="add_wallet_balance">Add Wallet Balance</string>
+
+    <string name="app_name1">Scan &amp; Pay</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="cc">Credit Card</string>
+    <string name="change_language">Change Language</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="debited_from">Debited from</string>
+    <string name="edit">Edit</string>
+    <string name="enter_your_card_information">Enter Your Card Information</string>
+    <string name="help">Help</string>
+    <string name="j">J</string>
+    <string name="john_doe">John Doe</string>
+    <string name="john_doe_com">john@doe.com</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="mobile_recharged">Mobile recharged</string>
+    <string name="mon_15_feb_balance_36_131_45">Mon 15 Feb Balance $ 36,131.45</string>
+    <string name="my_transactions">My Transactions</string>
+    <string name="need_help_about_this_transaction">Need help about this transaction?</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pay2313114422">Pay2313114422</string>
+    <string name="policies">Policies</string>
+    <string name="recharges_amp_pay_bills">Recharges &amp; Pay Bills</string>
+    <string name="refer_and_earn">Refer and Earn</string>
+    <string name="saved_cards">Saved Cards</string>
+    <string name="scan_pay">Scan Pay2 or any QR</string>
+    <string name="search_menu_title">Search</string>
+    <string name="send_money">Send Money</string>
+    <string name="shop_not_accepting_pay2_refer_shop">Shop not accepting Pay2? Refer Shop</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="successful">Successful</string>
+    <string name="t_amp_c_apply">*T&amp;C Apply</string>
+    <string name="transacted_on">Transacted on</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="wallet">Wallet</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="bus_booking" tools:ignore="MissingTranslation">Bus Booking</string>
+    <string name="leaving_from" tools:ignore="MissingTranslation">Leaving From</string>
+    <string name="going_to" tools:ignore="MissingTranslation">Going to</string>
+    <string name="select_date" tools:ignore="MissingTranslation">Select Date</string>
+    <string name="date" tools:ignore="MissingTranslation">Date</string>
+    <string name="time" tools:ignore="MissingTranslation">Time</string>
+    <string name="one" tools:ignore="MissingTranslation">1 Seat</string>
+    <string name="two" tools:ignore="MissingTranslation">2 Seat</string>
+    <string name="three" tools:ignore="MissingTranslation">3 Seat</string>
+    <string name="four" tools:ignore="MissingTranslation">4 Seat</string>
+    <string name="five" tools:ignore="MissingTranslation">5 Seat</string>
+    <string name="six" tools:ignore="MissingTranslation">6 Seat</string>
+    <string name="quick_filter" tools:ignore="MissingTranslation">Choose your comfort!</string>
+    <string name="ac" tools:ignore="MissingTranslation">AC</string>
+    <string name="non_ac" tools:ignore="MissingTranslation">Non AC</string>
+    <string name="sleeper" tools:ignore="MissingTranslation">Sleeper</string>
+    <string name="seater" tools:ignore="MissingTranslation">Seater</string>
+
+    <string name="recent_searches" tools:ignore="MissingTranslation">Recent Searches</string>
+    <string name="enter_city" tools:ignore="MissingTranslation">Enter Source</string>
+    <string name="enter_destination" tools:ignore="MissingTranslation">Enter Destination</string>
+    <string name="clear" tools:ignore="MissingTranslation">Clear</string>
+    <string name="seat_s_required" tools:ignore="MissingTranslation">How many seat you want?</string>
+    <string name="selectseats_amp_travellers" tools:ignore="MissingTranslation"><![CDATA[SelectSeats & Travellers]]></string>
+    <string name="available" tools:ignore="MissingTranslation">Available</string>
+    <string name="booked" tools:ignore="MissingTranslation">Booked</string>
+    <string name="ladies" tools:ignore="MissingTranslation">Ladies</string>
+    <string name="selected" tools:ignore="MissingTranslation">Selected</string>
+    <string name="female" tools:ignore="MissingTranslation">Female</string>
+    <string name="gender" tools:ignore="MissingTranslation">Gender</string>
+    <string name="age" translatable="false">age</string>
+    <string name="mobile_number" tools:ignore="MissingTranslation">mobile number</string>
+    <string name="add" tools:ignore="MissingTranslation">Add</string>
+    <string name="title" tools:ignore="MissingTranslation">Title</string>
+    <string name="mr" tools:ignore="MissingTranslation">Mr</string>
+    <string name="ms" tools:ignore="MissingTranslation">Ms</string>
+    <string name="mrs" tools:ignore="MissingTranslation">Mrs</string>
+    <string name="mstr" tools:ignore="MissingTranslation">Mstr</string>
+    <string name="miss" tools:ignore="MissingTranslation">Miss</string>
+    <string name="male" tools:ignore="MissingTranslation">Male</string>
+    <string name="first_name_start" tools:ignore="MissingTranslation">First Name</string>
+    <string name="last_name_star" tools:ignore="MissingTranslation">Last Name</string>
+    <string name="rupees" tools:ignore="MissingTranslation">Rs.</string>
+    <string name="cancellation_charges" tools:ignore="MissingTranslation">Cancellation Charges</string>
+    <string name="time_before_travel" tools:ignore="MissingTranslation">Time Before Travel</string>
+    <string name="cancellation_amount" tools:ignore="MissingTranslation">Cancellation Amount</string>
+    <string name="dot_small" tools:ignore="MissingTranslation">\u2022</string>
+    <string name="cancellation_policy_1" tools:ignore="MissingTranslation">Cancellation charges will be applicable on total ticket value.</string>
+    <string name="cancellation_policy_2" tools:ignore="MissingTranslation">Refundable amount is calculated based on scheduled bus departure time from the first boarding time.</string>
+    <string name="cancellation_policy_3" tools:ignore="MissingTranslation">Partial cancellation is not allowed for this ticket. Ticket cannot be cancelled after bus departure time.</string>
+    <string name="cancellation_policy_4" tools:ignore="MissingTranslation">Ticket cannot be cancelled after scheduled bus departure time from the first boarding point.</string>
+    <string name="cancellation_policy_heading_small" translatable="false">Cancellation Policy</string>
+
+    <string name="enter_message_hint">Enter Message</string>
+
+
+    <string name="kyc_note">Just Take Selfie Video Of Your Face and Blink</string>
+    <string name="kyc_apporved">Your kyc is approved</string>
+
+    <string name="kyc_pending">Your Kyc is still in pending , Please wait for approval.</string>
+    <string name="kyc_reject">Your KYC request is rejected upload KYC video again</string>
+
+    <string name="kyc_upload_conform_msg">Are you sure you want to upload this video for KYC?</string>
+
+    <string name="sign_up" tools:ignore="MissingTranslation"><u>SIGN UP</u></string>
+    <string name="pay_warning1" tools:ignore="MissingTranslation">* Once order paid can not be cancelled at your end only shop owner can cancel your order</string>
+    <string name="pay_warning2" tools:ignore="MissingTranslation">* Delivery charge will not be refunded if order is dispatched</string>
+    <string name="pay_warning3" tools:ignore="MissingTranslation">* Product can not cancelled or returned or replaced from our system if order is dispatched from shop owner . To do this you need to contact shop owner on personal basis</string>
+    <string name="pay_warning4" tools:ignore="MissingTranslation">* If order does not get delivered within promise time you can cancel order from your end and you will get full refund</string>
+    <string name="title_allowed_amount_100_500" tools:ignore="MissingTranslation">Allowed amount 100-500</string>
+    <string name="title_app_version" tools:ignore="MissingTranslation">"App Version - "</string>
+    <string name="title_coupon" tools:ignore="MissingTranslation">Coupon Applied</string>
+    <string name="title_my_products" tools:ignore="MissingTranslation">My Products</string>
+    <string name="error" tools:ignore="MissingTranslation">Error!</string>
+    <string name="alert" tools:ignore="MissingTranslation">Alert!</string>
+    <string name="join_premium_plan" tools:ignore="MissingTranslation">Join PREMIUM PLAN at just 100Rs \n Benefits are following</string>
+    <string name="join_now" tools:ignore="MissingTranslation">Join Now</string>
+    <string name="premium_plan" tools:ignore="MissingTranslation">PREMIUM PLAN</string>
+    <string name="distributorship_plan" tools:ignore="MissingTranslation">DISTRIBUTORSHIP PLAN</string>
+    <string name="cancellation_policy" tools:ignore="MissingTranslation"><u>Cancellation Policy</u></string>
+    <string name="disclaimer_description">Disclaimer: We support most types of recharges,but please check with your operator before you proceed.</string>
+    <string name="aadhaarAddress">Address</string>
+    <string name="completeVideoKyc">Complete Video Kyc</string>
+    <string name="kyc_details" tools:ignore="MissingTranslation">KYC Details</string>
+    <string name="approved_payment_in_upi_app" tools:ignore="MissingTranslation">Approved Payment in UPI App</string>
+    <string name="u2022_go_to_upi_app_or_click_on_notification_from_your_upi_id_linked_mobile_app" tools:ignore="MissingTranslation">• Go to UPI App or click on notification from your UPI id linked mobile app.</string>
+    <string name="u2022_check_pending_transactions" tools:ignore="MissingTranslation">• Check Pending transactions.</string>
+    <string name="u2022_complete_payment_by_selecting_bank_and_entering_upi_pin" tools:ignore="MissingTranslation">• Complete Payment by selecting bank and entering UPI PIN.</string>
+    <string name="enter_user_name" tools:ignore="MissingTranslation">Enter User Name</string>
+    <string name="datee" tools:ignore="MissingTranslation">Date:</string>
+    <string name="order_id" tools:ignore="MissingTranslation">Order Id:</string>
+    <string name="from_user" tools:ignore="MissingTranslation">From User:</string>
+    <string name="to_user" tools:ignore="MissingTranslation">To User:</string>
+    <string name="status" tools:ignore="MissingTranslation">Status :</string>
+    <string name="type" tools:ignore="MissingTranslation">Type:</string>
+    <string name="amount" tools:ignore="MissingTranslation">Amount:</string>
+    <string name="paid_amount" tools:ignore="MissingTranslation">Paid Amount:</string>
+    <string name="test" tools:ignore="MissingTranslation">test</string>
+    <string name="time_recharge_history_item2" tools:ignore="MissingTranslation">06:41 PM 8 Sep 2019</string>
+    <string name="payment_method" tools:ignore="MissingTranslation">Payment Method</string>
+    <string name="_10_rs" tools:ignore="MissingTranslation">10 Rs.</string>
+    <string name="data_1_gb_per_day" tools:ignore="MissingTranslation">Data : 1 GB/Per Day</string>
+    <string name="home" tools:ignore="MissingTranslation">Home</string>
+    <string name="jasmin_pambhar" tools:ignore="MissingTranslation">Jasmin Pambhar</string>
+    <string name="jasminpatel8269497_gmail_com" tools:ignore="MissingTranslation">jasminpatel8269497@gmail.com</string>
+    <string name="pending" tools:ignore="MissingTranslation">Pending</string>
+    <string name="disputed" tools:ignore="MissingTranslation">Disputed</string>
+    <string name="kyc_video_uploading" tools:ignore="MissingTranslation">KYC Video Uploading..</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="send" tools:ignore="MissingTranslation">Send</string>
+    <string name="order_id_12121" tools:ignore="MissingTranslation">Order Id 12121</string>
+    <string name="rs_100" tools:ignore="MissingTranslation">Rs. 100</string>
+    <string name="_9000000" tools:ignore="MissingTranslation">9000000</string>
+    <string name="_2020_03_01_23_59_59" tools:ignore="MissingTranslation">2020 - 03 - 01 23:59:59</string>
+    <string name="success" tools:ignore="MissingTranslation">Success</string>
+    <string name="profit_10_20" tools:ignore="MissingTranslation">Profit 10.20</string>
+    <string name="your_pending_recharge_for_mobile_90000000000_of_amount_00_is_now_success" tools:ignore="MissingTranslation">Your Pending Recharge for mobile 90000000000 of amount 00 is now success</string>
+    <string name="_9_may_2020" tools:ignore="MissingTranslation">9 may 2020</string>
+    <string name="your_order_successfull" tools:ignore="MissingTranslation">Your Order Successfull</string>
+    <string name="repeat">Repeat</string>
+    <string name="delete">DELETE</string>
+    <string name="name_here">Name here</string>
+    <string name="success_1000">Success 1000</string>
+    <string name="pending_1200">Pending 1200</string>
+    <string name="_10000">10000</string>
+    <string name="_500">500</string>
+    <string name="_0000_00_00">0000-00-00</string>
+    <string name="net_profit_500_rs">Net Profit 500 Rs.</string>
+    <string name="_1500">1500</string>
+    <string name="language_english_hindi_bangli">Language English, Hindi, Bangli</string>
+    <string name="call">CALL</string>
+    <string name="logout">Logout</string>
+    <string name="last">Last</string>
+    <string name="active">Active</string>
+    <string name="_00_00_00_00_00">00:00:00 00:00</string>
+    <string name="ogin">ogin</string>
+    <string name="account">Account:</string>
+    <string name="english">English</string>
+    <string name="default_language">Default Language</string>
+    <string name="from">From</string>
+    <string name="hrs">Hrs</string>
+    <string name="_100">100%</string>
+    <string name="_0_rs">0 Rs.</string>
+    <string name="stock_history">Stock History</string>
+    <string name="book_ticket">Book Ticket</string>
+    <string name="boarding_at">Boarding at</string>
+    <string name="dropping_at">Dropping at</string>
+    <string name="choose_boarding_dropping_point">Choose Boarding/Dropping Point</string>
+    <string name="unknown">Unknown</string>
+    <string name="profile">PROFILE</string>
+    <string name="pin">PIN</string>
+    <string name="search_offer">Search Offer</string>
+    <string name="select_operator">Select operator</string>
+    <string name="select_circle">Select Circle</string>
+    <string name="last_transaction">Last Transaction</string>
+    <string name="no_recent_transaction_available">No Recent Transaction Available.</string>
+    <string name="recent_transaction">Recent Transaction</string>
+    <string name="see_all">See all</string>
+    <string name="rating_order">Rating Order</string>
+    <string name="cashback_coupon">Cashback Coupon</string>
+    <string name="beneficiaryValidation">Beneficiary Validation</string>
+    <string name="_08_feb_at_11_20_am">08 Feb at 11:20 am</string>
+    <string name="_1000">+₹1000</string>
+
+    <string name="quantity_no" tools:ignore="MissingTranslation">Quantity No</string>
+    <string name="enter_amount">Enter Amount :</string>
+    <string name="save_as_pdf">Save As Pdf</string>
+    <string name="share_receipt">Share Receipt</string>
+    <string name="last_10_transactions_details">Last 10 Transactions Details</string>
+    <string name="last_transaction_details">Last Transaction Details</string>
+    <string name="xxl">XXL</string>
+    <string name="xl">XL</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="s">S</string>
+    <string name="select_size">Select Size</string>
+    <string name="size_chart">Size Chart</string>
+    <string name="shop_category">Shop Category</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="enter_name_of_shop">Enter Name Of Shop</string>
+    <string name="contacts">The Contacts Provider is a powerful and flexible Android component that manages the device\'s central repository of data about people. The Contacts Provider is the source of data you see in the device\'s contacts application, and you can also access its data in your own application and transfer data between the device and online services. The provider accommodates a wide range of data sources and tries to manage as much data as possible for each person, with the result that its organization is complex. Because of this, the provider\'s API includes an extensive set of contract classes and interfaces that facilitate both data retrieval and modification.</string>
+    <string name="public_groups_available_for_joining">Public Groups Available for joining</string>
+    <string name="v_s">V/S</string>
+
+</resources>

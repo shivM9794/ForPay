@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:state_pressed="true"
+        android:drawable="@drawable/rate_us_gray" />
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:state_pressed="true"
+        android:drawable="@drawable/rate_us" />
+    <item
+        android:id="@android:id/progress"
+        android:state_pressed="true"
+
+        android:drawable="@drawable/rate_us" />
+
+</layer-list>
